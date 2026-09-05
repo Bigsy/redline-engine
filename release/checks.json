@@ -29,5 +29,6 @@
   "typecheck": "pass",
   "format": "pass",
   "packedConsumer": "pass",
-  "published": false
+  "published": true,
+  "publicationRecord": "published.json"
 }

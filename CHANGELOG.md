@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 — standalone release candidate (not yet published)
+## 0.1.0 — published 2026-09-05
 
 - Complete validated structural and inline redlines, public options and version-1 marker contract.
 - Remove quadratic parse5 fragment adoption; reserve output during planning.

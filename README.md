@@ -5,18 +5,17 @@ fragments, highlight text and structural edits, and reconstruct either original 
 from the merged result. Written in TypeScript; no IDE dependencies, DOM globals or runtime
 network calls.
 
-Version **0.1.0** is prepared for its first standalone release. It is not yet published.
+Version **0.1.0** is published on [npm](https://www.npmjs.com/package/redline-engine).
 The operation model is version 1. The API is ESM-only and ships TypeScript declarations.
 Node.js 22+ is the runtime target; the release checks record the exact tested runtime.
 Browser use requires a bundler capable of resolving npm ESM dependencies.
 
 ## Install and compare
 
-Until publication, install the checked tarball:
+Install the published release:
 
 ```sh
-npm install /path/to/redline-engine-0.1.0.tgz
-# Once published: npm install redline-engine
+npm install redline-engine@0.1.0
 ```
 
 ```ts

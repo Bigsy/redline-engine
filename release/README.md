@@ -1,8 +1,9 @@
 # Standalone 0.1.0 release preparation
 
-The package is prepared for publication as **redline-engine@0.1.0**, ESM-only, MIT. It has
-not been published. The user explicitly chose a standalone milestone, with extension integration
-in the other project in a separate session. No extension files were changed.
+**Published 2026-09-05:** [redline-engine@0.1.0](https://www.npmjs.com/package/redline-engine).
+Registry integrity matches the exact tested tarball; a fresh registry installation passes
+projection and highlight checks. See [published.json](published.json). Extension integration
+remains a separate project/session; no extension files were changed.
 
 ## Release decision
 
@@ -64,22 +65,20 @@ the accepted limitation. No sibling checkout is needed for standalone acceptance
 The package test requires npm registry access to install normal dependencies and an installed
 Playwright Chromium. A fresh package build requires the repository's dev dependencies.
 
-## Publication handoff
+## Publication record
 
-The npm registry query for `redline-engine` returned 404 during preparation; this is not a
-reservation or guarantee of publish permission. The tested tarball was prepared before a repository remote existed, so it omits
-repository/homepage metadata. Source is now hosted at https://github.com/Bigsy/redline-engine
-(private); repository metadata can be added in a subsequent package release. Publication still needs the intended npm
-account and its normal authentication/2FA. Review the artifact named in `package-check.json`
-and publish that exact tarball, rather than rebuilding unreviewed files:
+Published with public npm access under account `bigsy`, tagged `latest`. The source repository
+is https://github.com/Bigsy/redline-engine (private), with release tag `v0.1.0` pointing to the
+implementation commit. The checked tarball predates the repository remote and omits repository
+metadata; its embedded README's pre-publication status text is historical. Source documentation
+now reflects publication; the immutable npm artifact was not rebuilt or replaced.
 
 ```sh
-npm publish ./artifacts/redline-engine-0.1.0.tgz --access public
+npm install redline-engine@0.1.0
 ```
 
-Publishing is a separate external action and has not been performed. After publication, record
-registry integrity/version, update the unpublished status in docs for the next patch, and let
-the extension consume an exact released version with lockfile integrity in its own session.
+The extension should consume this exact version with lockfile integrity in its own session.
+Future package changes require a new version and fresh package validation.
 
 ## Recorded validation
 

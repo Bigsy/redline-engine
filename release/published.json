@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-09-05T15:32:41.320Z",
+  "name": "redline-engine",
+  "version": "0.1.0",
+  "publishedAt": "2026-09-05T15:32:21.798Z",
+  "registry": "https://registry.npmjs.org/",
+  "url": "https://www.npmjs.com/package/redline-engine",
+  "tarball": "https://registry.npmjs.org/redline-engine/-/redline-engine-0.1.0.tgz",
+  "integrity": "sha512-WUAF3L6zVCmf9PhRsQ+ou+FLlCy5tOOiovGS6J8cusO1TLO0MurJTgWpZaZ65xQdkBN/NdHbvHf+pMxVAXKlbg==",
+  "shasum": "87dd8b0248d11738eca71ab83a858516eafb436d",
+  "latest": "0.1.0",
+  "sourceCommit": "deaa0be",
+  "matchesTestedArtifact": true,
+  "freshRegistryInstall": "passed"
+}
