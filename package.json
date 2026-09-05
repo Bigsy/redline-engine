@@ -1,0 +1,32 @@
+{
+  "name": "redline-engine",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.9.0",
+  "description": "Standalone structural HTML redline engine. Parses two sanitized bodies, aligns them, and renders a truthful merged redline.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "playground": "vite --config playground/vite.config.ts",
+    "bench": "node --experimental-strip-types bench/run.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "happy-dom": "^20.12.0",
+    "typescript": "^5.5.0",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
+  }
+}

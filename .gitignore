@@ -1,0 +1,7 @@
+node_modules/
+dist/
+bench/results/
+playground/dist/
+*.tgz
+PLAN-*.md
+.DS_Store
