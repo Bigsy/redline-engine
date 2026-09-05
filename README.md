@@ -2,13 +2,40 @@
 
 Structural HTML redlines for Node.js and bundled browser applications. Compare two body
 fragments, highlight text and structural edits, and reconstruct either original parsed body
-from the merged result. Written in TypeScript; no IDE dependencies, DOM globals or runtime
-network calls.
+from the merged result. Written in TypeScript, with no runtime DOM globals or network calls.
 
-Version **0.1.0** is published on [npm](https://www.npmjs.com/package/redline-engine).
-The operation model is version 1. The API is ESM-only and ships TypeScript declarations.
-Node.js 22+ is the runtime target; the release checks record the exact tested runtime.
-Browser use requires a bundler capable of resolving npm ESM dependencies.
+ESM-only, with TypeScript declarations. Requires Node.js 22+ or a browser bundler.
+
+## Why use it over node-htmldiff?
+
+`redline-engine` is a structural alternative to **node-htmldiff 0.9.4**. It aligns HTML
+subtrees and refines local text changes, making large documents with scattered edits practical
+while validating that both original parsed bodies can be reconstructed.
+
+On synthetic documents with **6,000 paragraphs per side, about 1 MB each**, the recorded
+comparison was:
+
+| Sparse-edit workload                  | redline-engine | node-htmldiff 0.9.4 |
+| ------------------------------------- | -------------: | ------------------: |
+| Original pair                         |         433 ms |   Timed out at 15 s |
+| Both bodies enclosed in a section     |         465 ms |   Timed out at 15 s |
+| Extra paragraph inserted at the start |         447 ms |   Timed out at 15 s |
+
+Measured on an Apple M1 Max with Node.js 26.7.0. New-engine values are medians of three
+fresh-process calls, including parsing, matching, rendering and both-side validation.
+The raw legacy renderer was run once per workload and terminated at 15 seconds, including
+process startup; its eventual completion time is unknown. See the
+[recorded samples](bench/sibling-results-2026-09-05.json).
+
+The gain is workload-dependent: simple insertion-only and repetitive cases were faster in
+node-htmldiff in the [baseline benchmarks](bench/REPORT.md). This is a replacement API,
+not a drop-in adapter.
+
+Beyond performance, the engine represents attribute-only changes and preserves whitespace,
+comments, empty elements and namespaces. Successful results pass reconstruction checks;
+unsupported inputs and exceeded budgets produce explicit outcomes. The
+[compatibility suite](COMPATIBILITY.md) has 317 passing checks covering adapted upstream
+behavior, intentional corrections and additional cases.
 
 ## Install and compare
 
@@ -73,8 +100,7 @@ the synchronous parser cannot be preempted by the cooperative engine timeout.
 [Browser host](examples/browser-host.mjs) and [worker](examples/browser-worker.mjs) examples
 show a bundler-based worker with a deadline and cancellation. Copy both files into your
 application. The worker sends HTML, diagnostics and timings rather than the operation journal;
-retain the comparison in the worker if you need its public `project` function. Worker failures
-are explicit; do not retry pathological inputs synchronously or with a legacy diff engine.
+retain the comparison in the worker if you need its public `project` function. Handle worker failures and cancellation in your application.
 
 Default generated markers use `data-diff-node="insert|delete"`, `data-diff-op` and optional
 `data-diff-wrapper`. Cross-inline formatting shells use `data-diff-unwrap="before|after"`.
@@ -103,18 +129,15 @@ Defaults: **2,000,000 combined UTF-16 input units; 200,000 nodes per side; depth
 interact: passing the input or node cap does not guarantee that work/output budgets fit.
 They do not impose a process memory ceiling or bound host layout.
 
-The acceptance suite passes 317 active checks with independent Chromium reconstruction and
-highlight assertions. On an Apple M1 Max, Stage 3 small-workload warm render-ready p95 was at
-most 22.9 ms; the actual near-input-guard sibling documents were below 0.6 seconds. A synthetic
-70,000-replacement case expanded to 7.8 MB and took **2.403 seconds p95**, missing the original
-provisional 2-second target. This result is accepted for the initial standalone release and
-remains recorded as a benchmark failure, not relabelled as a pass. Extreme expansion is memory
-intensive; use one active comparison worker per view and release results/views you no longer need.
+On the measured Apple M1 Max, small-workload warm Chromium render-ready p95 was at most
+22.9 ms. A synthetic 70,000-replacement case expanded to 7.8 million output units and took
+**2.403 seconds p95**, exceeding the benchmark's 2-second target. Extreme expansion is memory
+intensive. See [performance measurements](bench/STAGE3.md) for workloads, timing boundaries
+and memory observations.
 
-Malformed namespace-changing repairs can return `unsupported`. Local refinement is bounded;
-coarse replacements are explicitly diagnosed and preserve both sides. Browser appearance,
-hidden content and duplicate IDs remain host concerns. Chromium evidence is not packaged JCEF
-validation. Extension integration is a separate project and milestone.
+Malformed namespace-changing repairs can return `unsupported`. Bounded local refinement may
+produce diagnosed coarse replacements that preserve both sides. Document styling, hidden
+content and duplicate IDs remain application concerns.
 
 ## Develop and verify
 
@@ -131,13 +154,9 @@ pnpm run playground
 pnpm pack --pack-destination artifacts
 ```
 
-Ordinary builds, acceptance and standalone package checks require no sibling checkout.
-`test:package` installs the tarball in a temporary consumer, checks both TypeScript resolution
-modes and runs Node/browser-worker consumers. The optional `bench:sibling` and `test:integration`
-commands require the sibling extension; they are not standalone release prerequisites.
-`bench:stage3` retains the original strict performance target and currently exits 1 for the
-accepted extreme-case miss. Release decisions and reproducible evidence live in the repository's
-`release/` and `bench/` directories; [COMPATIBILITY.md](COMPATIBILITY.md) records behavior.
+`test:package` installs the tarball in a temporary consumer, checks TypeScript resolution
+and runs Node and browser-worker examples. `pnpm run bench` runs the isolated comparison
+benchmarks. [CONTRACT.md](CONTRACT.md) specifies the API and preservation guarantees.
 
 MIT — [LICENSE](LICENSE). [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) describes runtime
 dependencies and the separately retained test/benchmark provenance. The old engine and its
