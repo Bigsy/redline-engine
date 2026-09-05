@@ -1,0 +1,51 @@
+{
+  "smallCases": [
+    "edits-20-0.02",
+    "start-20",
+    "wrapper-20",
+    "edits-20-0.5",
+    "edits-20-1",
+    "repeated-20",
+    "corpus-collection-guide",
+    "corpus-transaction-guide",
+    "corpus-welcome-pack",
+    "fixture-words",
+    "fixture-nested insertion",
+    "fixture-repetition",
+    "fixture-list",
+    "fixture-table",
+    "fixture-attributes",
+    "fixture-attribute text shell",
+    "fixture-void and empty",
+    "fixture-formatting",
+    "fixture-unicode entities",
+    "fixture-whitespace",
+    "fixture-malformed",
+    "fixture-select",
+    "fixture-foreign",
+    "fixture-unrelated"
+  ],
+  "largeCases": [
+    "edits-5800-0.02",
+    "start-5800",
+    "wrapper-5800",
+    "edits-5800-0.5",
+    "edits-5800-1",
+    "giant-950000",
+    "expansion-70000",
+    "sibling-original",
+    "sibling-wrapper",
+    "sibling-start",
+    "input-exact-identity"
+  ],
+  "failures": [
+    {
+      "name": "expansion-70000",
+      "targetMs": 2000,
+      "warmP95Ms": 2402.5999999791384,
+      "coldMs": 2390.199999988079
+    }
+  ],
+  "passed": false,
+  "note": "Chromium synthetic render-ready timing gate only; memory ceiling and packaged JCEF are separate unresolved release gates."
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-05T13:25:10.283Z",
+  "upstream": {
+    "passed": 87,
+    "failed": 0,
+    "skipped": 0
+  },
+  "acceptance": {
+    "passed": 317,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unit": {
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0
+  },
+  "typecheck": "pass",
+  "build": "pass",
+  "playgroundBuild": "pass",
+  "note": "Functional regression results; provisional performance gate fails separately in stage3-gate.json.",
+  "format": "pass",
+  "diffWhitespace": "pass"
+}

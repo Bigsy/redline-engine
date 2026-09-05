@@ -3,15 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>redline-engine playground</title>
+    <title>Structural redline playground</title>
   </head>
   <body>
-    <h1>redline-engine playground</h1>
-    <p>
-      Before / redline / after panes, diagnostics, and timings go here. The
-      playground must sanitize its own inputs and isolate output: the library is
-      not a sanitizer.
-    </p>
+    <header>
+      <h1>Structural redline playground</h1>
+      <p>
+        Compare body HTML, inspect both originals, and see structural changes.
+        Inputs are sanitized; previews block scripts and external resources.
+      </p>
+    </header>
+    <div class="controls">
+      <label
+        >Example
+        <select id="fixture"></select></label
+      ><label><input type="checkbox" id="limit" /> Demonstrate work limit</label
+      ><button id="compare">Compare</button><button id="cancel">Cancel</button
+      ><output id="status" aria-live="polite"></output>
+    </div>
+    <section class="inputs">
+      <label
+        >Before HTML<textarea id="before" spellcheck="false"></textarea></label
+      ><label
+        >After HTML<textarea id="after" spellcheck="false"></textarea>
+      </label>
+    </section>
+    <section class="previews">
+      <div>
+        <h2>Before</h2>
+        <iframe id="before-view" title="Before" sandbox=""></iframe>
+      </div>
+      <div>
+        <h2>Redline</h2>
+        <iframe id="merged-view" title="Merged redline" sandbox=""></iframe>
+      </div>
+      <div>
+        <h2>After</h2>
+        <iframe id="after-view" title="After" sandbox=""></iframe>
+      </div>
+    </section>
+    <details open>
+      <summary>Diagnostics and timings</summary>
+      <pre id="diagnostics"></pre>
+    </details>
     <script type="module" src="./main.ts"></script>
   </body>
 </html>

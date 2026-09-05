@@ -1,0 +1,1029 @@
+[
+  {
+    "id": "calculate_operations#01",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > should be a function",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "calculate_operations#02",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Replace > should result in 3 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "working on it",
+      "after": "working in it"
+    },
+    "legacyHtml": "working <del data-operation-index=\"1\">on</del><ins data-operation-index=\"1\">in</ins> it",
+    "single": ["working on it", "working in it"]
+  },
+  {
+    "id": "calculate_operations#03",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Replace > should replace \"on\"",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "working on it",
+      "after": "working in it"
+    },
+    "legacyHtml": "working <del data-operation-index=\"1\">on</del><ins data-operation-index=\"1\">in</ins> it",
+    "single": ["working on it", "working in it"]
+  },
+  {
+    "id": "calculate_operations#04",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Insert > should result in 3 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "working it",
+      "after": "working in it"
+    },
+    "legacyHtml": "working <ins data-operation-index=\"1\">in </ins>it",
+    "single": ["working it", "working in it"]
+  },
+  {
+    "id": "calculate_operations#05",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Insert > should show an insert for \"on\"",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "working it",
+      "after": "working in it"
+    },
+    "legacyHtml": "working <ins data-operation-index=\"1\">in </ins>it",
+    "single": ["working it", "working in it"]
+  },
+  {
+    "id": "calculate_operations#06",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Insert > More than one word > should still have 3 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "working it",
+      "after": "working all up on it"
+    },
+    "legacyHtml": "working <ins data-operation-index=\"1\">all up on </ins>it",
+    "single": [
+      "working it",
+      "working in it",
+      "working it",
+      "working all up on it"
+    ]
+  },
+  {
+    "id": "calculate_operations#07",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Insert > More than one word > should show a big insert",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "working it",
+      "after": "working all up on it"
+    },
+    "legacyHtml": "working <ins data-operation-index=\"1\">all up on </ins>it",
+    "single": [
+      "working it",
+      "working in it",
+      "working it",
+      "working all up on it"
+    ]
+  },
+  {
+    "id": "calculate_operations#08",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Delete > should return 3 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a lot of text",
+      "after": "this is text"
+    },
+    "legacyHtml": "this is <del data-operation-index=\"1\">a lot of </del>text",
+    "single": ["this is a lot of text", "this is text"]
+  },
+  {
+    "id": "calculate_operations#09",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Delete > should show the delete in the middle",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a lot of text",
+      "after": "this is text"
+    },
+    "legacyHtml": "this is <del data-operation-index=\"1\">a lot of </del>text",
+    "single": ["this is a lot of text", "this is text"]
+  },
+  {
+    "id": "calculate_operations#10",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > In the middle > Equal > should return a single op",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "this is what it sounds like",
+      "after": "this is what it sounds like"
+    },
+    "legacyHtml": "this is what it sounds like",
+    "single": ["this is what it sounds like", "this is what it sounds like"]
+  },
+  {
+    "id": "calculate_operations#11",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the beginning > Replace > should return 2 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "I dont like veggies",
+      "after": "Joe loves veggies"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">I dont like</del><ins data-operation-index=\"0\">Joe loves</ins> veggies",
+    "single": ["I dont like veggies", "Joe loves veggies"]
+  },
+  {
+    "id": "calculate_operations#12",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the beginning > Replace > should have a replace at the beginning",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "I dont like veggies",
+      "after": "Joe loves veggies"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">I dont like</del><ins data-operation-index=\"0\">Joe loves</ins> veggies",
+    "single": ["I dont like veggies", "Joe loves veggies"]
+  },
+  {
+    "id": "calculate_operations#13",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the beginning > Insert > should return 2 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "dog",
+      "after": "the shaggy dog"
+    },
+    "legacyHtml": "<ins data-operation-index=\"0\">the shaggy </ins>dog",
+    "single": ["dog", "the shaggy dog"]
+  },
+  {
+    "id": "calculate_operations#14",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the beginning > Insert > should have an insert at the beginning",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "dog",
+      "after": "the shaggy dog"
+    },
+    "legacyHtml": "<ins data-operation-index=\"0\">the shaggy </ins>dog",
+    "single": ["dog", "the shaggy dog"]
+  },
+  {
+    "id": "calculate_operations#15",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the beginning > Delete > should return 2 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "awesome dog barks",
+      "after": "dog barks"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">awesome </del>dog barks",
+    "single": ["awesome dog barks", "dog barks"]
+  },
+  {
+    "id": "calculate_operations#16",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the beginning > Delete > should have a delete at the beginning",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "awesome dog barks",
+      "after": "dog barks"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">awesome </del>dog barks",
+    "single": ["awesome dog barks", "dog barks"]
+  },
+  {
+    "id": "calculate_operations#17",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the end > Replace > should return 2 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "the dog bit the cat",
+      "after": "the dog bit a bird"
+    },
+    "legacyHtml": "the dog bit <del data-operation-index=\"1\">the cat</del><ins data-operation-index=\"1\">a bird</ins>",
+    "single": ["the dog bit the cat", "the dog bit a bird"]
+  },
+  {
+    "id": "calculate_operations#18",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the end > Replace > should have a replace at the end",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "the dog bit the cat",
+      "after": "the dog bit a bird"
+    },
+    "legacyHtml": "the dog bit <del data-operation-index=\"1\">the cat</del><ins data-operation-index=\"1\">a bird</ins>",
+    "single": ["the dog bit the cat", "the dog bit a bird"]
+  },
+  {
+    "id": "calculate_operations#19",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the end > Insert > should return 2 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a dog",
+      "after": "this is a dog that barks"
+    },
+    "legacyHtml": "this is a dog<ins data-operation-index=\"1\"> that barks</ins>",
+    "single": ["this is a dog", "this is a dog that barks"]
+  },
+  {
+    "id": "calculate_operations#20",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the end > Insert > should have an Insert at the end",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a dog",
+      "after": "this is a dog that barks"
+    },
+    "legacyHtml": "this is a dog<ins data-operation-index=\"1\"> that barks</ins>",
+    "single": ["this is a dog", "this is a dog that barks"]
+  },
+  {
+    "id": "calculate_operations#21",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the end > Delete > should have 2 operations",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a dog that barks",
+      "after": "this is a dog"
+    },
+    "legacyHtml": "this is a dog<del data-operation-index=\"1\"> that barks</del>",
+    "single": ["this is a dog that barks", "this is a dog"]
+  },
+  {
+    "id": "calculate_operations#22",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Actions > At the end > Delete > should have a delete at the end",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a dog that barks",
+      "after": "this is a dog"
+    },
+    "legacyHtml": "this is a dog<del data-operation-index=\"1\"> that barks</del>",
+    "single": ["this is a dog that barks", "this is a dog"]
+  },
+  {
+    "id": "calculate_operations#23",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Action Combination > dont absorb non-single-whitespace tokens > should return 3 actions",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "I  am awesome",
+      "after": "You  are great"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">I  am awesome</del><ins data-operation-index=\"0\">You  are great</ins>",
+    "single": ["I  am awesome", "You  are great"]
+  },
+  {
+    "id": "calculate_operations#24",
+    "file": "calculate_operations.spec.js",
+    "title": "calculateOperations > Action Combination > dont absorb non-single-whitespace tokens > should have a replace first",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "I  am awesome",
+      "after": "You  are great"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">I  am awesome</del><ins data-operation-index=\"0\">You  are great</ins>",
+    "single": ["I  am awesome", "You  are great"]
+  },
+  {
+    "id": "diff#01",
+    "file": "diff.spec.js",
+    "title": "Diff > When both inputs are the same > should return the text",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "input text",
+      "after": "input text"
+    },
+    "legacyHtml": "input text"
+  },
+  {
+    "id": "diff#02",
+    "file": "diff.spec.js",
+    "title": "Diff > When a letter is added > should mark the new letter",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "input",
+      "after": "input 2"
+    },
+    "legacyHtml": "input<ins data-operation-index=\"1\"> 2</ins>"
+  },
+  {
+    "id": "diff#03",
+    "file": "diff.spec.js",
+    "title": "Diff > Whitespace differences > should collapse adjacent whitespace",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "Much \n\t    spaces",
+      "after": "Much spaces"
+    },
+    "legacyHtml": "Much spaces"
+  },
+  {
+    "id": "diff#04",
+    "file": "diff.spec.js",
+    "title": "Diff > Whitespace differences > should consider non-breaking spaces as equal",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "Hello&nbsp;world",
+      "after": "Hello&#160;world"
+    },
+    "legacyHtml": "Hello&#160;world"
+  },
+  {
+    "id": "diff#05",
+    "file": "diff.spec.js",
+    "title": "Diff > Whitespace differences > should consider non-breaking spaces and non-adjacent regular spaces as equal",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "Hello&nbsp;world",
+      "after": "Hello world"
+    },
+    "legacyHtml": "Hello world"
+  },
+  {
+    "id": "diff#06",
+    "file": "diff.spec.js",
+    "title": "Diff > When a class name is specified > should include the class in the wrapper tags",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "input",
+      "after": "input 2"
+    },
+    "legacyHtml": "input<ins data-operation-index=\"1\"> 2</ins>"
+  },
+  {
+    "id": "diff#07",
+    "file": "diff.spec.js",
+    "title": "Diff > Image Differences > show two images as different if their src attributes are different",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<img src=\"a.jpg\">",
+      "after": "<img src=\"b.jpg\">"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\"><img src=\"a.jpg\"></del><ins data-operation-index=\"0\"><img src=\"b.jpg\"></ins>",
+    "single": ["<img src=\"a.jpg\">", "<img src=\"b.jpg\">"]
+  },
+  {
+    "id": "diff#08",
+    "file": "diff.spec.js",
+    "title": "Diff > Image Differences > should show two images are the same if their src attributes are the same",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<img src=\"a.jpg\">",
+      "after": "<img src=\"a.jpg\" alt=\"hey!\">"
+    },
+    "legacyHtml": "<img src=\"a.jpg\" alt=\"hey!\">",
+    "single": ["<img src=\"a.jpg\">", "<img src=\"a.jpg\" alt=\"hey!\">"]
+  },
+  {
+    "id": "diff#09",
+    "file": "diff.spec.js",
+    "title": "Diff > Widget Differences > show two widgets as different if their data attributes are different",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<object data=\"a.jpg\"></object>",
+      "after": "<object data=\"b.jpg\"></object>"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\"><object data=\"a.jpg\"></object></del><ins data-operation-index=\"0\"><object data=\"b.jpg\"></object></ins>",
+    "single": [
+      "<object data=\"a.jpg\"></object>",
+      "<object data=\"b.jpg\"></object>"
+    ]
+  },
+  {
+    "id": "diff#10",
+    "file": "diff.spec.js",
+    "title": "Diff > Widget Differences > should show two widgets are the same if their data attributes are the same",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<object data=\"a.jpg\"><param>yo!</param></object>",
+      "after": "<object data=\"a.jpg\"></object>"
+    },
+    "legacyHtml": "<object data=\"a.jpg\"></object>",
+    "single": [
+      "<object data=\"a.jpg\"><param>yo!</param></object>",
+      "<object data=\"a.jpg\"></object>"
+    ]
+  },
+  {
+    "id": "diff#11",
+    "file": "diff.spec.js",
+    "title": "Diff > Math Differences > should show two math elements as different if their contents are different",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+      "after": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mn>b</mn><mn>5</mn></msup></msqrt></math>"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\"><math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math></del><ins data-operation-index=\"0\"><math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mn>b</mn><mn>5</mn></msup></msqrt></math></ins>",
+    "single": [
+      "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+      "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mn>b</mn><mn>5</mn></msup></msqrt></math>"
+    ]
+  },
+  {
+    "id": "diff#12",
+    "file": "diff.spec.js",
+    "title": "Diff > Math Differences > should show two math elements as the same if their contents are the same",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<math data-uuid=\"15568cd906504876548459e80e356878\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+      "after": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>"
+    },
+    "legacyHtml": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+    "single": [
+      "<math data-uuid=\"15568cd906504876548459e80e356878\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+      "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>"
+    ]
+  },
+  {
+    "id": "diff#13",
+    "file": "diff.spec.js",
+    "title": "Diff > Video Differences > show two widgets as different if their data attributes are different",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+      "after": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_rabbit/mp4\" type=\"video/webm\" /></video>"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\"><video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video></del><ins data-operation-index=\"0\"><video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_rabbit/mp4\" type=\"video/webm\" /></video></ins>",
+    "single": [
+      "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+      "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_rabbit/mp4\" type=\"video/webm\" /></video>"
+    ]
+  },
+  {
+    "id": "diff#14",
+    "file": "diff.spec.js",
+    "title": "Diff > Video Differences > should show two widgets are the same if their data attributes are the same",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<video data-uuid=\"65656565655487787484545454548494\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+      "after": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>"
+    },
+    "legacyHtml": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+    "single": [
+      "<video data-uuid=\"65656565655487787484545454548494\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+      "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>"
+    ]
+  },
+  {
+    "id": "diff#15",
+    "file": "diff.spec.js",
+    "title": "Diff > iframe Differences > show two widgets as different if their data attributes are different",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<iframe src=\"a.jpg\"></iframe>",
+      "after": "<iframe src=\"b.jpg\"></iframe>"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\"><iframe src=\"a.jpg\"></iframe></del><ins data-operation-index=\"0\"><iframe src=\"b.jpg\"></iframe></ins>",
+    "single": [
+      "<iframe src=\"a.jpg\"></iframe>",
+      "<iframe src=\"b.jpg\"></iframe>"
+    ]
+  },
+  {
+    "id": "diff#16",
+    "file": "diff.spec.js",
+    "title": "Diff > iframe Differences > should show two widgets are the same if their data attributes are the same",
+    "assertions": 2,
+    "passed": true,
+    "inputs": {
+      "before": "<iframe src=\"a.jpg\"></iframe>",
+      "after": "<iframe src=\"a.jpg\" class=\"foo\"></iframe>"
+    },
+    "legacyHtml": "<iframe src=\"a.jpg\" class=\"foo\"></iframe>",
+    "single": [
+      "<iframe src=\"a.jpg\"></iframe>",
+      "<iframe src=\"a.jpg\" class=\"foo\"></iframe>"
+    ]
+  },
+  {
+    "id": "find_matching_blocks#01",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > createMap > should be a function",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "find_matching_blocks#02",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > createMap > When the items exist in the search target > should find \"a\" twice",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "find_matching_blocks#03",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > createMap > When the items exist in the search target > should find \"a\" at 0",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "find_matching_blocks#04",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > createMap > When the items exist in the search target > should find \"a\" at 3",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "find_matching_blocks#05",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > createMap > When the items exist in the search target > should find \"has\" at 2",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "find_matching_blocks#06",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findBestMatch > When there is a match > should match the match",
+    "assertions": 6,
+    "passed": true,
+    "inputs": {
+      "before": "adogbites",
+      "after": "adogbitesaman"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">adogbites</del><ins data-operation-index=\"0\">adogbitesaman</ins>"
+  },
+  {
+    "id": "find_matching_blocks#07",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findBestMatch > When there is a match > When the match is surrounded > should match with appropriate indexing",
+    "assertions": 5,
+    "passed": true,
+    "inputs": {
+      "before": "dogbites",
+      "after": "thedogbitesaman"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">dogbites</del><ins data-operation-index=\"0\">thedogbitesaman</ins>"
+  },
+  {
+    "id": "find_matching_blocks#08",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findBestMatch > When there is no match > should return nothing",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "theratsqeaks",
+      "after": "adogbitesaman"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">theratsqeaks</del><ins data-operation-index=\"0\">adogbitesaman</ins>"
+  },
+  {
+    "id": "find_matching_blocks#09",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findMatchingBlocks > should be a function",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "find_matching_blocks#10",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findMatchingBlocks > When called with a single match > should return a match",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "a dog bites",
+      "after": "when a dog bites it hurts"
+    },
+    "legacyHtml": "<ins data-operation-index=\"0\">when </ins>a dog bites<ins data-operation-index=\"2\"> it hurts</ins>",
+    "single": ["a dog bites", "when a dog bites it hurts"]
+  },
+  {
+    "id": "find_matching_blocks#11",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findMatchingBlocks > When called with multiple matches > should return 3 matches",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "the dog bit a man",
+      "after": "the large brown dog bit a tall man"
+    },
+    "legacyHtml": "the<ins data-operation-index=\"1\"> large brown</ins> dog bit a <ins data-operation-index=\"3\">tall </ins>man",
+    "single": ["the dog bit a man", "the large brown dog bit a tall man"]
+  },
+  {
+    "id": "find_matching_blocks#12",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findMatchingBlocks > When called with multiple matches > should match \"the\"",
+    "assertions": 5,
+    "passed": true,
+    "inputs": {
+      "before": "the dog bit a man",
+      "after": "the large brown dog bit a tall man"
+    },
+    "legacyHtml": "the<ins data-operation-index=\"1\"> large brown</ins> dog bit a <ins data-operation-index=\"3\">tall </ins>man",
+    "single": ["the dog bit a man", "the large brown dog bit a tall man"]
+  },
+  {
+    "id": "find_matching_blocks#13",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findMatchingBlocks > When called with multiple matches > should match \"dog bit a\"",
+    "assertions": 5,
+    "passed": true,
+    "inputs": {
+      "before": "the dog bit a man",
+      "after": "the large brown dog bit a tall man"
+    },
+    "legacyHtml": "the<ins data-operation-index=\"1\"> large brown</ins> dog bit a <ins data-operation-index=\"3\">tall </ins>man",
+    "single": ["the dog bit a man", "the large brown dog bit a tall man"]
+  },
+  {
+    "id": "find_matching_blocks#14",
+    "file": "find_matching_blocks.spec.js",
+    "title": "findMatchingBlocks > findMatchingBlocks > When called with multiple matches > should match \"man\"",
+    "assertions": 5,
+    "passed": true,
+    "inputs": {
+      "before": "the dog bit a man",
+      "after": "the large brown dog bit a tall man"
+    },
+    "legacyHtml": "the<ins data-operation-index=\"1\"> large brown</ins> dog bit a <ins data-operation-index=\"3\">tall </ins>man",
+    "single": ["the dog bit a man", "the large brown dog bit a tall man"]
+  },
+  {
+    "id": "from_port_source#01",
+    "file": "from_port_source.spec.js",
+    "title": "The specs from the ruby source project > should diff text",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "a word is here",
+      "after": "a nother word is there"
+    },
+    "legacyHtml": "a<ins data-operation-index=\"1\"> nother</ins> word is <del data-operation-index=\"3\">here</del><ins data-operation-index=\"3\">there</ins>"
+  },
+  {
+    "id": "from_port_source#02",
+    "file": "from_port_source.spec.js",
+    "title": "The specs from the ruby source project > should insert a letter and a space",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "a c",
+      "after": "a b c"
+    },
+    "legacyHtml": "a <ins data-operation-index=\"1\">b </ins>c"
+  },
+  {
+    "id": "from_port_source#03",
+    "file": "from_port_source.spec.js",
+    "title": "The specs from the ruby source project > should remove a letter and a space",
+    "assertions": 0,
+    "passed": true,
+    "inputs": {
+      "before": "a b c",
+      "after": "a c"
+    },
+    "legacyHtml": "a <del data-operation-index=\"1\">b </del>c"
+  },
+  {
+    "id": "from_port_source#04",
+    "file": "from_port_source.spec.js",
+    "title": "The specs from the ruby source project > should change a letter",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "a b c",
+      "after": "a d c"
+    },
+    "legacyHtml": "a <del data-operation-index=\"1\">b</del><ins data-operation-index=\"1\">d</ins> c"
+  },
+  {
+    "id": "html_to_tokens#01",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > should be a function",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "html_to_tokens#02",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when called with text > should return 4",
+    "assertions": 1,
+    "passed": true,
+    "single": ["this is a test"]
+  },
+  {
+    "id": "html_to_tokens#03",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when called with html > should return 11",
+    "assertions": 1,
+    "passed": true,
+    "single": ["<p>this is a <strong>test</strong></p>"]
+  },
+  {
+    "id": "html_to_tokens#04",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when called with html > should remove any html comments",
+    "assertions": 1,
+    "passed": true,
+    "single": [
+      "<p>this is a <strong>test</strong></p>",
+      "<p> this is <!-- a comment! --> </p>"
+    ]
+  },
+  {
+    "id": "html_to_tokens#05",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > should identify contiguous whitespace as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": ["a   b"]
+  },
+  {
+    "id": "html_to_tokens#06",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > should identify a single space as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": [" a b "]
+  },
+  {
+    "id": "html_to_tokens#07",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > should identify self closing tags as tokens",
+    "assertions": 1,
+    "passed": true,
+    "single": ["<p>hello</br>goodbye</p>"]
+  },
+  {
+    "id": "html_to_tokens#08",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when encountering atomic tags > should identify an image tag as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": ["<p><img src=\"1.jpg\"><img src=\"2.jpg\"></p>"]
+  },
+  {
+    "id": "html_to_tokens#09",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when encountering atomic tags > should identify an iframe tag as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": ["<p><iframe src=\"sample.html\"></iframe></p>"]
+  },
+  {
+    "id": "html_to_tokens#10",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when encountering atomic tags > should identify an object tag as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": [
+      "<p><object><param name=\"1\" /><param name=\"2\" /></object></p>"
+    ]
+  },
+  {
+    "id": "html_to_tokens#11",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when encountering atomic tags > should identify a math tag as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": [
+      "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#x03C0;<!-- π --></mi><mo>&#x2062;<!-- &InvisibleTimes; --></mo><msup><mi>r</mi><mn>2</mn></msup></math></p>"
+    ]
+  },
+  {
+    "id": "html_to_tokens#12",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when encountering atomic tags > should identify an svg tag as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": [
+      "<p><svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" /></svg></p>"
+    ]
+  },
+  {
+    "id": "html_to_tokens#13",
+    "file": "html_to_tokens.spec.js",
+    "title": "htmlToTokens > when encountering atomic tags > should identify a script tag as a single token",
+    "assertions": 1,
+    "passed": true,
+    "single": ["<p><script>console.log(\"hi\");</script></p>"]
+  },
+  {
+    "id": "module#01",
+    "file": "module.spec.js",
+    "title": "The module > should return a function",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "pain_games#01",
+    "file": "pain_games.spec.js",
+    "title": "Pain Games > When an entire sentence is replaced > should replace the whole chunk",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is what I had",
+      "after": "and now we have a new one"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">this is what I had</del><ins data-operation-index=\"0\">and now we have a new one</ins>"
+  },
+  {
+    "id": "render_operations#01",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > should be a function",
+    "assertions": 1,
+    "passed": true
+  },
+  {
+    "id": "render_operations#02",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > equal > should output the text",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a test",
+      "after": "this is a test"
+    },
+    "legacyHtml": "this is a test"
+  },
+  {
+    "id": "render_operations#03",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > insert > should wrap in an <ins>",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is",
+      "after": "this is a test"
+    },
+    "legacyHtml": "this is<ins data-operation-index=\"1\"> a test</ins>"
+  },
+  {
+    "id": "render_operations#04",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > delete > should wrap in a <del>",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a test of stuff",
+      "after": "this is a test"
+    },
+    "legacyHtml": "this is a test<del data-operation-index=\"1\"> of stuff</del>"
+  },
+  {
+    "id": "render_operations#05",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > replace > should wrap in both <ins> and <del>",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "this is a break",
+      "after": "this is a test"
+    },
+    "legacyHtml": "this is a <del data-operation-index=\"1\">break</del><ins data-operation-index=\"1\">test</ins>"
+  },
+  {
+    "id": "render_operations#06",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > Dealing with tags > should identify contained inserted tags",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "<p>a</p>",
+      "after": "<p>a b</p><p>c</p>"
+    },
+    "legacyHtml": "<p>a<ins data-operation-index=\"1\"> b</ins></p><p data-diff-node=\"ins\" data-operation-index=\"3\"><ins data-operation-index=\"3\">c</ins></p>"
+  },
+  {
+    "id": "render_operations#07",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > Dealing with tags > should identify contained deleted tags",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "<p>a b</p><p>c</p>",
+      "after": "<p>a</p>"
+    },
+    "legacyHtml": "<p>a<del data-operation-index=\"1\"> b</del></p><p data-diff-node=\"del\" data-operation-index=\"3\"><del data-operation-index=\"3\">c</del></p>"
+  },
+  {
+    "id": "render_operations#08",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > Dealing with tags > should not identify partial tags",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "test</b>non-bold",
+      "after": "test!</b>non-bold<b>bold"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">test</del><ins data-operation-index=\"0\">test!</ins></b>non-bold<b><ins data-operation-index=\"2\">bold</ins>"
+  },
+  {
+    "id": "render_operations#09",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > Dealing with tags > When there is a change at the beginning, in a <p> > should keep the change inside the <p>",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "<p>this is awesome</p>",
+      "after": "<p>I is awesome</p>"
+    },
+    "legacyHtml": "<p><del data-operation-index=\"1\">this</del><ins data-operation-index=\"1\">I</ins> is awesome</p>"
+  },
+  {
+    "id": "render_operations#10",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > empty tokens > should not be wrapped",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "text",
+      "after": "text "
+    },
+    "legacyHtml": "text"
+  },
+  {
+    "id": "render_operations#11",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > tags with attributes > should treat attribute changes as equal and output the after tag",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "<p>this is awesome</p>",
+      "after": "<p style=\"margin: 2px;\" class=\"after\">this is awesome</p>"
+    },
+    "legacyHtml": "<p style=\"margin: 2px;\" class=\"after\">this is awesome</p>"
+  },
+  {
+    "id": "render_operations#12",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > tags with attributes > should show changes within tags with different attributes",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "<p>this is awesome</p>",
+      "after": "<p style=\"margin: 2px;\" class=\"after\">that is awesome</p>"
+    },
+    "legacyHtml": "<p style=\"margin: 2px;\" class=\"after\"><del data-operation-index=\"1\">this</del><ins data-operation-index=\"1\">that</ins> is awesome</p>"
+  },
+  {
+    "id": "render_operations#13",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > wrappable tags > should wrap void tags",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "old text",
+      "after": "new<br/> text"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">old</del><ins data-operation-index=\"0\">new<br/></ins> text"
+  },
+  {
+    "id": "render_operations#14",
+    "file": "render_operations.spec.js",
+    "title": "renderOperations > wrappable tags > should wrap atomic tags",
+    "assertions": 1,
+    "passed": true,
+    "inputs": {
+      "before": "old<iframe src=\"source.html\"></iframe> text",
+      "after": "new text"
+    },
+    "legacyHtml": "<del data-operation-index=\"0\">old<iframe src=\"source.html\"></iframe></del><ins data-operation-index=\"0\">new</ins> text"
+  }
+]

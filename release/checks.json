@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-05T13:48:36.956Z",
+  "version": "0.1.0",
+  "tarballSha256": "74025d1bf5ef034464c9378e219b5818da6bce05e76c1d0a3d89c7a0926513d5",
+  "runtimes": [
+    "v26.7.0",
+    "v22.23.2"
+  ],
+  "acceptance": {
+    "passed": 317,
+    "failed": 0,
+    "skipped": 0
+  },
+  "upstream": {
+    "passed": 87,
+    "failed": 0,
+    "skipped": 0
+  },
+  "unit": {
+    "passed": 40,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0
+  },
+  "typecheck": "pass",
+  "format": "pass",
+  "packedConsumer": "pass",
+  "published": false
+}

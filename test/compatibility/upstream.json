@@ -1,0 +1,415 @@
+[
+  {
+    "id": "UP-calculate_operations#02",
+    "sources": ["calculate_operations#02", "calculate_operations#03"],
+    "before": "working on it",
+    "after": "working in it",
+    "context": "workingit"
+  },
+  {
+    "id": "UP-calculate_operations#04",
+    "sources": ["calculate_operations#04", "calculate_operations#05"],
+    "before": "working it",
+    "after": "working in it",
+    "context": "workingit"
+  },
+  {
+    "id": "UP-calculate_operations#06",
+    "sources": ["calculate_operations#06", "calculate_operations#07"],
+    "before": "working it",
+    "after": "working all up on it",
+    "context": "workingit"
+  },
+  {
+    "id": "UP-calculate_operations#08",
+    "sources": ["calculate_operations#08", "calculate_operations#09"],
+    "before": "this is a lot of text",
+    "after": "this is text",
+    "context": "thisistext"
+  },
+  {
+    "id": "UP-calculate_operations#10",
+    "sources": ["calculate_operations#10"],
+    "before": "this is what it sounds like",
+    "after": "this is what it sounds like",
+    "context": "thisiswhatitsoundslike"
+  },
+  {
+    "id": "UP-calculate_operations#11",
+    "sources": ["calculate_operations#11", "calculate_operations#12"],
+    "before": "I dont like veggies",
+    "after": "Joe loves veggies",
+    "context": "veggies"
+  },
+  {
+    "id": "UP-calculate_operations#13",
+    "sources": ["calculate_operations#13", "calculate_operations#14"],
+    "before": "dog",
+    "after": "the shaggy dog",
+    "context": "dog"
+  },
+  {
+    "id": "UP-calculate_operations#15",
+    "sources": ["calculate_operations#15", "calculate_operations#16"],
+    "before": "awesome dog barks",
+    "after": "dog barks",
+    "context": "dogbarks"
+  },
+  {
+    "id": "UP-calculate_operations#17",
+    "sources": ["calculate_operations#17", "calculate_operations#18"],
+    "before": "the dog bit the cat",
+    "after": "the dog bit a bird",
+    "context": "thedogbit"
+  },
+  {
+    "id": "UP-calculate_operations#19",
+    "sources": ["calculate_operations#19", "calculate_operations#20"],
+    "before": "this is a dog",
+    "after": "this is a dog that barks",
+    "context": "thisisadog"
+  },
+  {
+    "id": "UP-calculate_operations#21",
+    "sources": ["calculate_operations#21", "calculate_operations#22"],
+    "before": "this is a dog that barks",
+    "after": "this is a dog",
+    "context": "thisisadog"
+  },
+  {
+    "id": "UP-calculate_operations#23",
+    "sources": ["calculate_operations#23", "calculate_operations#24"],
+    "before": "I  am awesome",
+    "after": "You  are great",
+    "context": ""
+  },
+  {
+    "id": "UP-diff#01",
+    "sources": ["diff#01"],
+    "before": "input text",
+    "after": "input text",
+    "context": "inputtext"
+  },
+  {
+    "id": "UP-diff#02",
+    "sources": ["diff#02", "diff#06"],
+    "before": "input",
+    "after": "input 2",
+    "context": "input"
+  },
+  {
+    "id": "UP-diff#03",
+    "sources": ["diff#03"],
+    "before": "Much \n\t    spaces",
+    "after": "Much spaces",
+    "context": "Muchspaces"
+  },
+  {
+    "id": "UP-diff#04",
+    "sources": ["diff#04"],
+    "before": "Hello&nbsp;world",
+    "after": "Hello&#160;world",
+    "context": "Helloworld"
+  },
+  {
+    "id": "UP-diff#05",
+    "sources": ["diff#05"],
+    "before": "Hello&nbsp;world",
+    "after": "Hello world",
+    "context": "Helloworld"
+  },
+  {
+    "id": "UP-diff#07",
+    "sources": ["diff#07"],
+    "before": "<img src=\"a.jpg\">",
+    "after": "<img src=\"b.jpg\">",
+    "context": ""
+  },
+  {
+    "id": "UP-diff#08",
+    "sources": ["diff#08"],
+    "before": "<img src=\"a.jpg\">",
+    "after": "<img src=\"a.jpg\" alt=\"hey!\">"
+  },
+  {
+    "id": "UP-diff#09",
+    "sources": ["diff#09"],
+    "before": "<object data=\"a.jpg\"></object>",
+    "after": "<object data=\"b.jpg\"></object>",
+    "context": ""
+  },
+  {
+    "id": "UP-diff#10",
+    "sources": ["diff#10"],
+    "before": "<object data=\"a.jpg\"><param>yo!</param></object>",
+    "after": "<object data=\"a.jpg\"></object>"
+  },
+  {
+    "id": "UP-diff#11",
+    "sources": ["diff#11"],
+    "before": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+    "after": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mn>b</mn><mn>5</mn></msup></msqrt></math>",
+    "context": ""
+  },
+  {
+    "id": "UP-diff#12",
+    "sources": ["diff#12"],
+    "before": "<math data-uuid=\"15568cd906504876548459e80e356878\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>",
+    "after": "<math data-uuid=\"55784cd906504787a8e459e80e3bb554\"><msqrt><msup><mi>b</mi><mn>2</mn></msup></msqrt></math>"
+  },
+  {
+    "id": "UP-diff#13",
+    "sources": ["diff#13"],
+    "before": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+    "after": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_rabbit/mp4\" type=\"video/webm\" /></video>",
+    "context": ""
+  },
+  {
+    "id": "UP-diff#14",
+    "sources": ["diff#14"],
+    "before": "<video data-uuid=\"65656565655487787484545454548494\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>",
+    "after": "<video data-uuid=\"0787866ab5494d88b4b1ee423453224b\"><source src=\"inkling-video:///big_buck_bunny/webm_high\" type=\"video/webm\" /></video>"
+  },
+  {
+    "id": "UP-diff#15",
+    "sources": ["diff#15"],
+    "before": "<iframe src=\"a.jpg\"></iframe>",
+    "after": "<iframe src=\"b.jpg\"></iframe>",
+    "context": ""
+  },
+  {
+    "id": "UP-diff#16",
+    "sources": ["diff#16"],
+    "before": "<iframe src=\"a.jpg\"></iframe>",
+    "after": "<iframe src=\"a.jpg\" class=\"foo\"></iframe>"
+  },
+  {
+    "id": "UP-find_matching_blocks#06",
+    "sources": ["find_matching_blocks#06"],
+    "before": "a dog bites",
+    "after": "a dog bites a man",
+    "context": "adogbites"
+  },
+  {
+    "id": "UP-find_matching_blocks#07",
+    "sources": ["find_matching_blocks#07"],
+    "before": "dog bites",
+    "after": "the dog bites a man",
+    "context": "dogbites"
+  },
+  {
+    "id": "UP-find_matching_blocks#08",
+    "sources": ["find_matching_blocks#08"],
+    "before": "the rat sqeaks",
+    "after": "a dog bites a man",
+    "context": ""
+  },
+  {
+    "id": "UP-find_matching_blocks#10",
+    "sources": ["find_matching_blocks#10"],
+    "before": "a dog bites",
+    "after": "when a dog bites it hurts",
+    "context": "adogbites"
+  },
+  {
+    "id": "UP-find_matching_blocks#11",
+    "sources": [
+      "find_matching_blocks#11",
+      "find_matching_blocks#12",
+      "find_matching_blocks#13",
+      "find_matching_blocks#14"
+    ],
+    "before": "the dog bit a man",
+    "after": "the large brown dog bit a tall man",
+    "context": "thedogbitaman"
+  },
+  {
+    "id": "UP-from_port_source#01",
+    "sources": ["from_port_source#01"],
+    "before": "a word is here",
+    "after": "a nother word is there",
+    "context": "awordis"
+  },
+  {
+    "id": "UP-from_port_source#02",
+    "sources": ["from_port_source#02"],
+    "before": "a c",
+    "after": "a b c",
+    "context": "ac"
+  },
+  {
+    "id": "UP-from_port_source#03",
+    "sources": ["from_port_source#03"],
+    "before": "a b c",
+    "after": "a c",
+    "context": "ac"
+  },
+  {
+    "id": "UP-from_port_source#04",
+    "sources": ["from_port_source#04"],
+    "before": "a b c",
+    "after": "a d c",
+    "context": "ac"
+  },
+  {
+    "id": "UP-html_to_tokens#02",
+    "sources": ["html_to_tokens#02", "render_operations#02"],
+    "before": "this is a test",
+    "after": "this is a test"
+  },
+  {
+    "id": "UP-html_to_tokens#03",
+    "sources": ["html_to_tokens#03"],
+    "before": "<p>this is a <strong>test</strong></p>",
+    "after": "<p>this is a <strong>test</strong></p>"
+  },
+  {
+    "id": "UP-html_to_tokens#04",
+    "sources": ["html_to_tokens#04"],
+    "before": "<p> this is <!-- a comment! --> </p>",
+    "after": "<p> this is <!-- a comment! --> </p>"
+  },
+  {
+    "id": "UP-html_to_tokens#05",
+    "sources": ["html_to_tokens#05"],
+    "before": "a   b",
+    "after": "a   b"
+  },
+  {
+    "id": "UP-html_to_tokens#06",
+    "sources": ["html_to_tokens#06"],
+    "before": " a b ",
+    "after": " a b "
+  },
+  {
+    "id": "UP-html_to_tokens#07",
+    "sources": ["html_to_tokens#07"],
+    "before": "<p>hello</br>goodbye</p>",
+    "after": "<p>hello</br>goodbye</p>"
+  },
+  {
+    "id": "UP-html_to_tokens#08",
+    "sources": ["html_to_tokens#08"],
+    "before": "<p><img src=\"1.jpg\"><img src=\"2.jpg\"></p>",
+    "after": "<p><img src=\"1.jpg\"><img src=\"2.jpg\"></p>"
+  },
+  {
+    "id": "UP-html_to_tokens#09",
+    "sources": ["html_to_tokens#09"],
+    "before": "<p><iframe src=\"sample.html\"></iframe></p>",
+    "after": "<p><iframe src=\"sample.html\"></iframe></p>"
+  },
+  {
+    "id": "UP-html_to_tokens#10",
+    "sources": ["html_to_tokens#10"],
+    "before": "<p><object><param name=\"1\" /><param name=\"2\" /></object></p>",
+    "after": "<p><object><param name=\"1\" /><param name=\"2\" /></object></p>"
+  },
+  {
+    "id": "UP-html_to_tokens#11",
+    "sources": ["html_to_tokens#11"],
+    "before": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#x03C0;<!-- π --></mi><mo>&#x2062;<!-- &InvisibleTimes; --></mo><msup><mi>r</mi><mn>2</mn></msup></math></p>",
+    "after": "<p><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>&#x03C0;<!-- π --></mi><mo>&#x2062;<!-- &InvisibleTimes; --></mo><msup><mi>r</mi><mn>2</mn></msup></math></p>"
+  },
+  {
+    "id": "UP-html_to_tokens#12",
+    "sources": ["html_to_tokens#12"],
+    "before": "<p><svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" /></svg></p>",
+    "after": "<p><svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" stroke-width=\"4\" fill=\"yellow\" /></svg></p>"
+  },
+  {
+    "id": "UP-html_to_tokens#13",
+    "sources": ["html_to_tokens#13"],
+    "before": "<p><script>console.log(\"hi\");</script></p>",
+    "after": "<p><script>console.log(\"hi\");</script></p>"
+  },
+  {
+    "id": "UP-pain_games#01",
+    "sources": ["pain_games#01"],
+    "before": "this is what I had",
+    "after": "and now we have a new one",
+    "context": ""
+  },
+  {
+    "id": "UP-render_operations#03",
+    "sources": ["render_operations#03"],
+    "before": "this is",
+    "after": "this is a test",
+    "context": "thisis"
+  },
+  {
+    "id": "UP-render_operations#04",
+    "sources": ["render_operations#04"],
+    "before": "this is a test of stuff",
+    "after": "this is a test",
+    "context": "thisisatest"
+  },
+  {
+    "id": "UP-render_operations#05",
+    "sources": ["render_operations#05"],
+    "before": "this is a break",
+    "after": "this is a test",
+    "context": "thisisa"
+  },
+  {
+    "id": "UP-render_operations#06",
+    "sources": ["render_operations#06"],
+    "before": "<p>a</p>",
+    "after": "<p>a b</p><p>c</p>",
+    "context": "a"
+  },
+  {
+    "id": "UP-render_operations#07",
+    "sources": ["render_operations#07"],
+    "before": "<p>a b</p><p>c</p>",
+    "after": "<p>a</p>",
+    "context": "a"
+  },
+  {
+    "id": "UP-render_operations#08",
+    "sources": ["render_operations#08"],
+    "before": "test</b>non-bold",
+    "after": "test!</b>non-bold<b>bold",
+    "context": "non-bold"
+  },
+  {
+    "id": "UP-render_operations#09",
+    "sources": ["render_operations#09"],
+    "before": "<p>this is awesome</p>",
+    "after": "<p>I is awesome</p>",
+    "context": "isawesome"
+  },
+  {
+    "id": "UP-render_operations#10",
+    "sources": ["render_operations#10"],
+    "before": "text",
+    "after": "text ",
+    "context": "text"
+  },
+  {
+    "id": "UP-render_operations#11",
+    "sources": ["render_operations#11"],
+    "before": "<p>this is awesome</p>",
+    "after": "<p style=\"margin: 2px;\" class=\"after\">this is awesome</p>"
+  },
+  {
+    "id": "UP-render_operations#12",
+    "sources": ["render_operations#12"],
+    "before": "<p>this is awesome</p>",
+    "after": "<p style=\"margin: 2px;\" class=\"after\">that is awesome</p>"
+  },
+  {
+    "id": "UP-render_operations#13",
+    "sources": ["render_operations#13"],
+    "before": "old text",
+    "after": "new<br/> text",
+    "context": "text"
+  },
+  {
+    "id": "UP-render_operations#14",
+    "sources": ["render_operations#14"],
+    "before": "old<iframe src=\"source.html\"></iframe> text",
+    "after": "new text",
+    "context": "text"
+  }
+]

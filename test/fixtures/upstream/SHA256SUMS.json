@@ -1,0 +1,23 @@
+{
+  "LICENSE": "00e58cfd68fd9fc79f278da42ee0ba199cee5c16e2341366d9df903c4e8f3958",
+  "README.md": "91cb840b2159ff73e69c98c5b6df1d3b25a1f3103702fec4503ecb842c238587",
+  "htmldiff-cli.js": "927be07865153702b69a3d0b25006bf4da1c25ed4e43b58ddd319e1b0dd4fa9b",
+  "js/htmldiff.d.ts": "b2533dc62538f1a843428db901c564f8ba803de2b8249d171d556c983ee99c91",
+  "js/htmldiff.js": "64feb37b180fbc46e3788f51e6de60be133288561b6efebda667238122d61cf0",
+  "package.json": "44fe57c10835102f2a57ccefda91bd128a548e5892bbe25a4de4cb84b09da70c",
+  "sample/after.html": "cbcc88ee802f27c1cb92da5fa52825a2a4853db4d996a4920dd2a81173b4f2d1",
+  "sample/after.png": "c5965c0e8064db631f00c6f5fdaea6d2d2d29e8ed30fb941c3ad5fb98490c844",
+  "sample/before.html": "4498d3b08b97a446221a49c6b65360b36fa073fe0742e726963175d8bd3a7a07",
+  "sample/before.png": "758c32337fd011ecb5de85acdc7118ca7e9c1c5537f14a78796ad34970792df4",
+  "sample/result.html": "af8a198a3ba3dcfaf71ff5d819bbd62fe50e8cef6904d65be59eca513718c2fe",
+  "test/calculate_operations.spec.js": "e6daf759622470b2f1967a97b5fa3c7ab3f050cae91d7eb968fd92e04cd0ab67",
+  "test/config.js": "2afb93bbc602c51583a598d98ba4a76b7d9cd720441a12942cec06e58f75777a",
+  "test/diff.spec.js": "2a58b88f4012923050f0cab4a605e74a76824dd8943bc0d9f83cfe02c2dc057c",
+  "test/find_matching_blocks.spec.js": "9660eebc660e97d79d7f5c0f755885fa9ef3cedd9511ab148795e3dbb3655313",
+  "test/from_port_source.spec.js": "710e822fb529e33b5bf8a46a2ea653c3136b64cd090eb39e9fe582c57163f36f",
+  "test/html_to_tokens.spec.js": "b83ac0a9646466528cbf2733433bf4e3b7f15800a00fd09ce0d24b7210c40628",
+  "test/mocha.opts": "29ea021b2a66d948d1a937ea386291a486c54692113444efe5de8f93fc40e96e",
+  "test/module.spec.js": "641a554e725a7c0e391eb9e240c45b5b1c2132f97e140d721660398e19719e06",
+  "test/pain_games.spec.js": "6711f5dda12d6fe372400257bb44ce6911c05f628051ae6e0e6c70788bede12d",
+  "test/render_operations.spec.js": "1c0964c949d945c0fc0c45584dbc0da2e8f8371906e7b78794bb8d9ef0dd3567"
+}

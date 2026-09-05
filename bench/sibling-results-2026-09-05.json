@@ -1,0 +1,260 @@
+{
+  "date": "2026-09-05T13:10:33.782Z",
+  "hardware": {
+    "cpu": "Apple M1 Max",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "node": "v26.7.0",
+  "sourceFiles": {
+    "before": {
+      "path": "testdata/large/generated/before.html",
+      "units": 991677,
+      "utf8Bytes": 991677,
+      "sha256": "57707daadc66dd86f8c062c450fa45c0cf19a2c8f2679ed8c3916b406c6e8a90"
+    },
+    "after": {
+      "path": "testdata/large/generated/after.html",
+      "units": 989997,
+      "utf8Bytes": 989997,
+      "sha256": "f3983b9e9c2ffd2b8badc28c9213b245677fedf1b490d3f9276980ab0467eba3"
+    }
+  },
+  "legacySha256": "5f470f7e7e966a7d9ab1af751790df85694175281220a6fd46a1694866cf9a22",
+  "method": "Existing files read directly from sibling. Body extraction outside timing. Fresh processes, 15s cutoff includes startup; elapsed excludes module loading. Three completed samples except raw legacy (one); stop repeats on timeout. Plugin shortcut uses actual sibling function extracted/transpiled unchanged, with happy-dom parsing; not JCEF or full viewer timing. Structural includes both-side validation; legacy does not.",
+  "rows": [
+    {
+      "fixture": "existing-6000-paragraph-pair",
+      "engine": "structural",
+      "combinedUnits": 1981444,
+      "runs": [
+        {
+          "elapsedMs": 436.9545,
+          "maxRssKiB": 253680,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 195.242083,
+            "matchMs": 104.53212500000001,
+            "renderMs": 2.3875419999999963,
+            "validateMs": 134.27354099999997,
+            "totalMs": 436.435291
+          },
+          "outputUnits": 1201809,
+          "coarseReplacements": 0
+        },
+        {
+          "elapsedMs": 429.312958,
+          "maxRssKiB": 253408,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 186.69716599999998,
+            "matchMs": 102.91991700000003,
+            "renderMs": 2.486082999999951,
+            "validateMs": 136.60658400000005,
+            "totalMs": 428.70975000000004
+          },
+          "outputUnits": 1201809,
+          "coarseReplacements": 0
+        },
+        {
+          "elapsedMs": 432.794709,
+          "maxRssKiB": 253424,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 193.544792,
+            "matchMs": 102.823541,
+            "renderMs": 2.4322090000000003,
+            "validateMs": 133.484666,
+            "totalMs": 432.285208
+          },
+          "outputUnits": 1201809,
+          "coarseReplacements": 0
+        }
+      ]
+    },
+    {
+      "fixture": "existing-6000-paragraph-pair",
+      "engine": "legacy-raw",
+      "combinedUnits": 1981444,
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 15000
+        }
+      ]
+    },
+    {
+      "fixture": "existing-6000-paragraph-pair",
+      "engine": "plugin-shortcut",
+      "combinedUnits": 1981444,
+      "runs": [
+        {
+          "elapsedMs": 458.40720799999997,
+          "maxRssKiB": 656320,
+          "outcome": "rendered",
+          "shortcutUsed": true,
+          "chunks": 241,
+          "outputUnits": 1015442
+        },
+        {
+          "elapsedMs": 559.177292,
+          "maxRssKiB": 656032,
+          "outcome": "rendered",
+          "shortcutUsed": true,
+          "chunks": 241,
+          "outputUnits": 1015442
+        },
+        {
+          "elapsedMs": 443.558625,
+          "maxRssKiB": 656848,
+          "outcome": "rendered",
+          "shortcutUsed": true,
+          "chunks": 241,
+          "outputUnits": 1015442
+        }
+      ]
+    },
+    {
+      "fixture": "same-pair-with-wrapper",
+      "engine": "structural",
+      "combinedUnits": 1981482,
+      "runs": [
+        {
+          "elapsedMs": 448.62741700000004,
+          "maxRssKiB": 258320,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 202.92487500000001,
+            "matchMs": 103.82054200000002,
+            "renderMs": 3.726165999999978,
+            "validateMs": 137.64945899999998,
+            "totalMs": 448.121042
+          },
+          "outputUnits": 1201829,
+          "coarseReplacements": 0
+        },
+        {
+          "elapsedMs": 464.731125,
+          "maxRssKiB": 253024,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 210.6015,
+            "matchMs": 109.840417,
+            "renderMs": 2.558708000000024,
+            "validateMs": 141.14512499999995,
+            "totalMs": 464.14574999999996
+          },
+          "outputUnits": 1201829,
+          "coarseReplacements": 0
+        },
+        {
+          "elapsedMs": 467.022583,
+          "maxRssKiB": 253728,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 217.08679200000003,
+            "matchMs": 107.41679199999999,
+            "renderMs": 2.5854999999999677,
+            "validateMs": 139.42062500000003,
+            "totalMs": 466.509709
+          },
+          "outputUnits": 1201829,
+          "coarseReplacements": 0
+        }
+      ]
+    },
+    {
+      "fixture": "same-pair-with-wrapper",
+      "engine": "legacy-raw",
+      "combinedUnits": 1981482,
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 15000
+        }
+      ]
+    },
+    {
+      "fixture": "same-pair-with-wrapper",
+      "engine": "plugin-shortcut",
+      "combinedUnits": 1981482,
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 15000
+        }
+      ]
+    },
+    {
+      "fixture": "same-pair-with-start-insertion",
+      "engine": "structural",
+      "combinedUnits": 1981470,
+      "runs": [
+        {
+          "elapsedMs": 443.962375,
+          "maxRssKiB": 254080,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 199.38658299999997,
+            "matchMs": 105.080333,
+            "renderMs": 2.376542000000029,
+            "validateMs": 136.582,
+            "totalMs": 443.425458
+          },
+          "outputUnits": 1200770,
+          "coarseReplacements": 3
+        },
+        {
+          "elapsedMs": 446.79783299999997,
+          "maxRssKiB": 253680,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 196.616625,
+            "matchMs": 107.80820799999998,
+            "renderMs": 2.4215000000000373,
+            "validateMs": 139.43462499999998,
+            "totalMs": 446.280958
+          },
+          "outputUnits": 1200770,
+          "coarseReplacements": 3
+        },
+        {
+          "elapsedMs": 455.674125,
+          "maxRssKiB": 253712,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 202.7625,
+            "matchMs": 110.57745800000001,
+            "renderMs": 2.4190419999999904,
+            "validateMs": 139.38208300000002,
+            "totalMs": 455.14108300000004
+          },
+          "outputUnits": 1200770,
+          "coarseReplacements": 3
+        }
+      ]
+    },
+    {
+      "fixture": "same-pair-with-start-insertion",
+      "engine": "legacy-raw",
+      "combinedUnits": 1981470,
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 15000
+        }
+      ]
+    },
+    {
+      "fixture": "same-pair-with-start-insertion",
+      "engine": "plugin-shortcut",
+      "combinedUnits": 1981470,
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 15000
+        }
+      ]
+    }
+  ]
+}

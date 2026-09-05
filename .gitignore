@@ -5,3 +5,7 @@ playground/dist/
 *.tgz
 PLAN-*.md
 .DS_Store
+test-results/
+playwright-report/
+.pnpm-store/
+artifacts/

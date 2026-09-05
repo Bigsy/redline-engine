@@ -1,0 +1,6 @@
+{
+  "date": "2026-09-05T13:47:40.022Z",
+  "elapsedMs": 15002.79999999702,
+  "deadlineMs": 15000,
+  "method": "Actual playground watchdog; injected worker loops synchronously; real clock, no fake timers. Elapsed measured from worker construction."
+}

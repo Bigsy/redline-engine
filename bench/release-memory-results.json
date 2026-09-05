@@ -1,0 +1,163 @@
+{
+  "date": "2026-09-05T13:39:57.740Z",
+  "machine": {
+    "cpu": "Apple M1 Max",
+    "memoryBytes": 68719476736
+  },
+  "method": "Three fresh Chromium processes; one unchanged 70000-element expansion each; full journal response, same Stage 3 frame style. Summed RSS snapshots across CDP process IDs can double-count shared pages and are not sampled peaks. Forced main-page GC only after timing-independent inspection and cleanup; worker terminated. No latency claim from this instrumented memory experiment.",
+  "rows": [
+    {
+      "sample": 0,
+      "chromium": "151.0.7922.34",
+      "outputUnits": 7817788,
+      "snapshots": [
+        {
+          "stage": "blank",
+          "rssMiB": 247.34375,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 938428,
+            "totalSize": 1572864,
+            "embedderHeapUsedSize": 1386752,
+            "backingStorageSize": 0
+          }
+        },
+        {
+          "stage": "result-full-journal-worker-alive",
+          "rssMiB": 674.796875,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 30294156,
+            "totalSize": 36454400,
+            "embedderHeapUsedSize": 1379752,
+            "backingStorageSize": 138
+          }
+        },
+        {
+          "stage": "frame-laid-out",
+          "rssMiB": 1471.96875,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 26514428,
+            "totalSize": 34111488,
+            "embedderHeapUsedSize": 710242224,
+            "backingStorageSize": 505
+          }
+        },
+        {
+          "stage": "released-forced-main-gc",
+          "rssMiB": 660.078125,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 655052,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 305944,
+            "backingStorageSize": 33
+          }
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "chromium": "151.0.7922.34",
+      "outputUnits": 7817788,
+      "snapshots": [
+        {
+          "stage": "blank",
+          "rssMiB": 236.28125,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 938428,
+            "totalSize": 1572864,
+            "embedderHeapUsedSize": 1386752,
+            "backingStorageSize": 0
+          }
+        },
+        {
+          "stage": "result-full-journal-worker-alive",
+          "rssMiB": 674.984375,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 30311700,
+            "totalSize": 36716544,
+            "embedderHeapUsedSize": 1379752,
+            "backingStorageSize": 138
+          }
+        },
+        {
+          "stage": "frame-laid-out",
+          "rssMiB": 1509.78125,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 26514412,
+            "totalSize": 33849344,
+            "embedderHeapUsedSize": 709172736,
+            "backingStorageSize": 505
+          }
+        },
+        {
+          "stage": "released-forced-main-gc",
+          "rssMiB": 657.4375,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 655052,
+            "totalSize": 1310720,
+            "embedderHeapUsedSize": 305944,
+            "backingStorageSize": 33
+          }
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "chromium": "151.0.7922.34",
+      "outputUnits": 7817788,
+      "snapshots": [
+        {
+          "stage": "blank",
+          "rssMiB": 235.671875,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 938428,
+            "totalSize": 1572864,
+            "embedderHeapUsedSize": 1386752,
+            "backingStorageSize": 0
+          }
+        },
+        {
+          "stage": "result-full-journal-worker-alive",
+          "rssMiB": 674.484375,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 30316912,
+            "totalSize": 36192256,
+            "embedderHeapUsedSize": 1379752,
+            "backingStorageSize": 138
+          }
+        },
+        {
+          "stage": "frame-laid-out",
+          "rssMiB": 1519.828125,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 26514428,
+            "totalSize": 34111488,
+            "embedderHeapUsedSize": 711412088,
+            "backingStorageSize": 505
+          }
+        },
+        {
+          "stage": "released-forced-main-gc",
+          "rssMiB": 658.578125,
+          "processCount": 4,
+          "mainHeap": {
+            "usedSize": 655052,
+            "totalSize": 1048576,
+            "embedderHeapUsedSize": 305944,
+            "backingStorageSize": 33
+          }
+        }
+      ]
+    }
+  ]
+}

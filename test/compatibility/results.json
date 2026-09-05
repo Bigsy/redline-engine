@@ -1,0 +1,1279 @@
+{
+  "recorded": "2026-09-05",
+  "node": "v26.7.0",
+  "platform": "darwin/arm64",
+  "total": 317,
+  "passed": 317,
+  "failed": 0,
+  "skipped": 0,
+  "checks": [
+    {
+      "name": "GAP-inline independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-inline meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-repetition independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-repetition meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-comments independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-comments meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-template independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-template meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-leading-newline independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "GAP-leading-newline meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-className custom generated wrapper class",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-dataPrefix custom generated metadata namespace",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-atomicTags configurable exact tag names",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-validation rejects invalid className",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-validation rejects invalid dataPrefix",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-validation rejects invalid atomicTags",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-roundtrip custom metadata preserves both independently parsed sides",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-reserved custom metadata cannot spoof generated markers",
+      "status": "passed"
+    },
+    {
+      "name": "OPT-atomic-exact matches b without treating blockquote as atomic",
+      "status": "passed"
+    },
+    {
+      "name": "S2-listing-newline independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-listing-newline meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-listing-newline deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-template-pre-newline independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-template-pre-newline meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-template-pre-newline deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-overlapping-ranges independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-overlapping-ranges meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-overlapping-ranges deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-overlapping-reverse independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-overlapping-reverse meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-overlapping-reverse deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-nested independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-nested meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-nested deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-reverse independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-reverse meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-reverse deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-atomic independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-atomic meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-atomic deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-owned-ins independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-owned-ins meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-inline-owned-ins deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-comment-table independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-comment-table meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-comment-table deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-table-whitespace independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-table-whitespace meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-table-whitespace deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-select independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-select meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-select deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-nested-template independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-nested-template meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-nested-template deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-template-identity independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-template-identity meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-template-identity deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-textarea-newline independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-textarea-newline meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-textarea-newline deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-nested-pre-identity independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-nested-pre-identity meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-nested-pre-identity deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-svg-namespace independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-svg-namespace meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-svg-namespace deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-math-integration independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-math-integration meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-math-integration deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-malformed-table independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-malformed-table meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-malformed-table deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-0 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-0 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-0 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-1 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-1 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-1 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-2 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-2 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-2 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-3 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-3 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-3 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-4 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-4 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-4 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-5 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-5 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-5 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-6 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-6 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-6 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-7 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-7 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-7 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-8 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-8 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-8 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-9 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-9 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-9 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-10 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-10 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-10 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-11 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-11 meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "S2-generated-11 deterministic rendering and operation journal",
+      "status": "passed"
+    },
+    {
+      "name": "S2-options projections and ownership {\"className\":\"change_2\",\"dataPrefix\":\"review-v2\",\"atomicTags\":[]}",
+      "status": "passed"
+    },
+    {
+      "name": "S2-options projections and ownership {\"className\":\"change\",\"dataPrefix\":\"review\",\"atomicTags\":[\"p\",\"p\"]}",
+      "status": "passed"
+    },
+    {
+      "name": "S2-options projections and ownership {\"dataPrefix\":\"review\",\"atomicTags\":[\"video\"]}",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid className=\"\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid className=null returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid className=3 returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid className=\"two classes\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid className=\"x<y\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid dataPrefix=\"\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid dataPrefix=null returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid dataPrefix=\"UPPER\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid dataPrefix=\"a--b\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid dataPrefix=\"x\\\"\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid atomicTags=null returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid atomicTags=\"p\" returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid atomicTags=[\"P\"] returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid atomicTags=[null] returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-invalid atomicTags=[\"b*\"] returns bounded unsupported",
+      "status": "passed"
+    },
+    {
+      "name": "S2-reserved nested metadata <template><p data-review-op=\"spoof\">x</p></template>",
+      "status": "passed"
+    },
+    {
+      "name": "S2-reserved nested metadata <svg data-review-unwrap=\"after\"></svg>",
+      "status": "passed"
+    },
+    {
+      "name": "S2-reserved nested metadata <ins data-review-wrapper>x</ins>",
+      "status": "passed"
+    },
+    {
+      "name": "S2-bounded inline/template maxInputUnits",
+      "status": "passed"
+    },
+    {
+      "name": "S2-bounded inline/template maxNodes",
+      "status": "passed"
+    },
+    {
+      "name": "S2-bounded inline/template maxDepth",
+      "status": "passed"
+    },
+    {
+      "name": "S2-bounded inline/template maxWork",
+      "status": "passed"
+    },
+    {
+      "name": "S2-bounded inline/template maxOutputUnits",
+      "status": "passed"
+    },
+    {
+      "name": "S2-bounded inline/template timeoutMs",
+      "status": "passed"
+    },
+    {
+      "name": "S2-namespace repair mglyph declines truthfully",
+      "status": "passed"
+    },
+    {
+      "name": "S2-namespace repair malignmark declines truthfully",
+      "status": "passed"
+    },
+    {
+      "name": "S2-local token exhaustion preserves both Chromium projections with explicit coarse diagnostic",
+      "status": "passed"
+    },
+    {
+      "name": "PL-header independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-header meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-video-js independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-video-js meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-style-guide independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-style-guide meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-default-atomic independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-default-atomic meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-video independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-video meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-identity independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-identity meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-attributes independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-attributes meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-mixed independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-mixed meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-text independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-text meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-blocks-added independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-blocks-added meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-blocks-removed independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-blocks-removed meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-void-added independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-void-added meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-reindent independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-reindent meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-space-added independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-space-added meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-crlf independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-crlf meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-pre independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-pre meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-inline-pre independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-inline-pre meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-around-pre independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-around-pre meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-blocks-added-reverse independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-blocks-added-reverse meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-void-added-reverse independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-void-added-reverse meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-aligned independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-aligned meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-aligned all 14 sparse edits stay paragraph-local",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-wrapped independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-wrapped meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-wrapped all 14 sparse edits stay paragraph-local",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-start-insert independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-start-insert meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-sparse-start-insert all 14 sparse edits stay paragraph-local",
+      "status": "passed"
+    },
+    {
+      "name": "PL-corpus-transaction-guide independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-corpus-transaction-guide meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-corpus-collection-guide independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-corpus-collection-guide meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "PL-corpus-welcome-pack independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "PL-corpus-welcome-pack meaningful highlights",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#02 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#02 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#04 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#04 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#06 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#06 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#08 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#08 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#10 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#10 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#11 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#11 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#13 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#13 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#15 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#15 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#17 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#17 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#19 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#19 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#21 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#21 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#23 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-calculate_operations#23 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#01 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#01 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#02 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#02 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#03 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#03 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#04 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#04 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#05 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#05 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#07 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#07 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#08 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#08 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#09 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#09 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#10 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#10 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#11 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#11 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#12 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#12 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#13 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#13 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#14 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#14 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#15 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#15 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#16 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-diff#16 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#06 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#06 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#07 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#07 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#08 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#08 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#10 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#10 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#11 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-find_matching_blocks#11 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#01 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#01 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#02 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#02 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#03 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#03 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#04 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-from_port_source#04 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#02 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#02 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#03 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#03 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#04 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#04 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#05 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#05 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#06 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#06 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#07 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#07 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#08 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#08 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#09 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#09 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#10 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#10 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#11 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#11 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#12 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#12 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#13 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-html_to_tokens#13 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-pain_games#01 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-pain_games#01 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#03 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#03 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#04 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#04 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#05 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#05 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#06 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#06 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#07 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#07 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#08 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#08 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#09 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#09 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#10 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#10 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#11 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#11 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#12 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#12 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#13 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#13 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#14 independent both-side DOM reconstruction",
+      "status": "passed"
+    },
+    {
+      "name": "UP-render_operations#14 meaningful highlights and unchanged context",
+      "status": "passed"
+    },
+    {
+      "name": "UP-module#01 documented public API",
+      "status": "passed"
+    }
+  ]
+}

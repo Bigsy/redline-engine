@@ -1,0 +1,52 @@
+[
+  {
+    "id": "plain-text",
+    "mergedHtml": "working <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-2\" data-diff-wrapper=\"\">on</del><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-3\" data-diff-wrapper=\"\">in</ins> it",
+    "operationCount": 4,
+    "coarseReplacements": 0
+  },
+  {
+    "id": "inline",
+    "mergedHtml": "<p>the <b data-diff-unwrap=\"after\" data-diff-op=\"op-3\">quick</b> <b data-diff-unwrap=\"before\" data-diff-op=\"op-6\"><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-7\" data-diff-wrapper=\"\">brown</ins></b><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-8\" data-diff-wrapper=\"\"> </ins>fox</p>",
+    "operationCount": 9,
+    "coarseReplacements": 0
+  },
+  {
+    "id": "overlapping-inline",
+    "mergedHtml": "<p><b data-diff-unwrap=\"after\" data-diff-op=\"op-2\">quick <b data-diff-unwrap=\"before\" data-diff-op=\"op-4\"><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-5\" data-diff-wrapper=\"\">brown </ins>fox</b></b></p>",
+    "operationCount": 6,
+    "coarseReplacements": 0
+  },
+  {
+    "id": "custom-options",
+    "mergedHtml": "<p><del class=\"review-change\" data-review-node=\"delete\" data-review-op=\"op-2\" data-review-wrapper=\"\">old</del><ins class=\"review-change\" data-review-node=\"insert\" data-review-op=\"op-3\" data-review-wrapper=\"\">new</ins> text</p>",
+    "operationCount": 4,
+    "coarseReplacements": 0
+  },
+  {
+    "id": "comments",
+    "mergedHtml": "<del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-1\" data-diff-wrapper=\"\"><!-- reviewer note --></del><p>same</p>",
+    "operationCount": 2,
+    "coarseReplacements": 0
+  },
+  {
+    "id": "template",
+    "mergedHtml": "<template data-diff-node=\"delete\" data-diff-op=\"op-1\"><p>old</p></template><template data-diff-node=\"insert\" data-diff-op=\"op-1\"><p>new</p></template>",
+    "operationCount": 1,
+    "coarseReplacements": 1
+  },
+  {
+    "id": "newline",
+    "mergedHtml": "<pre data-diff-node=\"delete\" data-diff-op=\"op-1\">\n\na</pre><pre data-diff-node=\"insert\" data-diff-op=\"op-1\">\n\nb</pre>",
+    "operationCount": 1,
+    "coarseReplacements": 1
+  },
+  {
+    "id": "PL-sparse-start-insert",
+    "insertedStart": "<p data-diff-node=\"insert\" data-diff-op=\"op-3\">Inserted start.</p>",
+    "paragraph0": "<p>Paragraph 0 <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-6\" data-diff-wrapper=\"\">is</del><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-7\" data-diff-wrapper=\"\">was</ins> <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-9\" data-diff-wrapper=\"\">unchanged</del><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-10\" data-diff-wrapper=\"\">edited</ins> <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-12\" data-diff-wrapper=\"\">synthetic prose with enough content </del>to <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-14\" data-diff-wrapper=\"\">make</del><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-15\" data-diff-wrapper=\"\">exercise</ins> the <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-17\" data-diff-wrapper=\"\">whole</del><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-18\" data-diff-wrapper=\"\">large</ins> document <del class=\"redline\" data-diff-node=\"delete\" data-diff-op=\"op-20\" data-diff-wrapper=\"\">large</del><ins class=\"redline\" data-diff-node=\"insert\" data-diff-op=\"op-21\" data-diff-wrapper=\"\">fast path</ins>. <b>Bold segment 0</b> and <a href=\"#s0\">link 0</a>.</p>",
+    "localEditedParagraphs": 14,
+    "operationCount": 1711,
+    "coarseReplacements": 0
+  }
+]

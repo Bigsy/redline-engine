@@ -1,0 +1,7 @@
+{
+  "method": "Actual engine, 80000 nested divs per side, 1760002 combined units, fresh process, parent SIGKILL at 15000ms including startup",
+  "result": {
+    "outcome": "host-terminated",
+    "elapsedMs": 15002.956417000001
+  }
+}

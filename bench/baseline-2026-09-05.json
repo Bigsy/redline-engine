@@ -1,0 +1,2438 @@
+{
+  "createdAt": "2026-09-05T11:26:16.104Z",
+  "engineVersion": "0.1.0-spike.1",
+  "dependencies": {
+    "parse5": "8.0.1",
+    "diff": "9.0.0",
+    "@playwright/test": "1.62.1",
+    "vite": "8.2.2"
+  },
+  "hardware": {
+    "cpu": "Apple M1 Max",
+    "logicalCpus": 10,
+    "memoryBytes": 68719476736,
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "runtime": {
+    "node": "26.7.0",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.8",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.3",
+    "libffi": "3.7.1",
+    "lief": "0.17.0",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "147",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "3.5.7",
+    "simdjson": "4.6.6",
+    "simdutf": "7.7.0",
+    "sqlite": "3.53.4",
+    "tz": "2026c",
+    "undici": "8.9.0",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "14.6.202.34-node.28",
+    "zlib": "1.3.2.1-motley-42c2f19",
+    "zstd": "1.5.7"
+  },
+  "method": "Fresh Node process per sample; 2500 ms hard cutoff includes startup. elapsedMs excludes startup. RSS includes Node and imported engines. Three cold samples for anchor cases; one elsewhere. jsdiff is a bounded sequence candidate, not an HTML renderer.",
+  "rows": [
+    {
+      "fixture": "giant-punctuation",
+      "engine": "structural",
+      "before": {
+        "units": 950007,
+        "utf8Bytes": 950007,
+        "documentNodes": 6,
+        "lexicalTokens": 950007
+      },
+      "after": {
+        "units": 950007,
+        "utf8Bytes": 950007,
+        "documentNodes": 6,
+        "lexicalTokens": 950007
+      },
+      "runs": [
+        {
+          "elapsedMs": 260.27491599999996,
+          "maxRssKiB": 283680,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 94.56191600000001,
+            "matchMs": 2.0350839999999835,
+            "renderMs": 0.21295800000001464,
+            "validateMs": 162.98533299999997,
+            "totalMs": 259.79529099999996
+          }
+        }
+      ],
+      "artifact": "giant-punctuation-structural.json"
+    },
+    {
+      "fixture": "giant-punctuation",
+      "engine": "legacy",
+      "before": {
+        "units": 950007,
+        "utf8Bytes": 950007,
+        "documentNodes": 6,
+        "lexicalTokens": 950007
+      },
+      "after": {
+        "units": 950007,
+        "utf8Bytes": 950007,
+        "documentNodes": 6,
+        "lexicalTokens": 950007
+      },
+      "runs": [
+        {
+          "elapsedMs": 803.736666,
+          "maxRssKiB": 524240,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "giant-punctuation-legacy.json"
+    },
+    {
+      "fixture": "giant-punctuation",
+      "engine": "jsdiff",
+      "before": {
+        "units": 950007,
+        "utf8Bytes": 950007,
+        "documentNodes": 6,
+        "lexicalTokens": 950007
+      },
+      "after": {
+        "units": 950007,
+        "utf8Bytes": 950007,
+        "documentNodes": 6,
+        "lexicalTokens": 950007
+      },
+      "runs": [
+        {
+          "elapsedMs": 37.837625,
+          "maxRssKiB": 161936,
+          "outcome": "local-limit"
+        }
+      ],
+      "artifact": "giant-punctuation-jsdiff.json"
+    },
+    {
+      "fixture": "deep-nesting",
+      "engine": "structural",
+      "before": {
+        "units": 3301,
+        "utf8Bytes": 3301,
+        "documentNodes": 305,
+        "lexicalTokens": 2101
+      },
+      "after": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 6,
+        "lexicalTokens": 8
+      },
+      "runs": [
+        {
+          "elapsedMs": 4.031540999999997,
+          "maxRssKiB": 66720,
+          "outcome": "limit",
+          "limit": "maxDepth"
+        }
+      ],
+      "artifact": "deep-nesting-structural.json"
+    },
+    {
+      "fixture": "deep-nesting",
+      "engine": "legacy",
+      "before": {
+        "units": 3301,
+        "utf8Bytes": 3301,
+        "documentNodes": 305,
+        "lexicalTokens": 2101
+      },
+      "after": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 6,
+        "lexicalTokens": 8
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.5390000000000015,
+          "maxRssKiB": 67024,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "deep-nesting-legacy.json"
+    },
+    {
+      "fixture": "deep-nesting",
+      "engine": "jsdiff",
+      "before": {
+        "units": 3301,
+        "utf8Bytes": 3301,
+        "documentNodes": 305,
+        "lexicalTokens": 2101
+      },
+      "after": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 6,
+        "lexicalTokens": 8
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.7927080000000046,
+          "maxRssKiB": 65712,
+          "outcome": "local-limit"
+        }
+      ],
+      "artifact": "deep-nesting-jsdiff.json"
+    },
+    {
+      "fixture": "sparse-nested-4000",
+      "engine": "structural",
+      "before": {
+        "units": 659579,
+        "utf8Bytes": 659579,
+        "documentNodes": 36005,
+        "lexicalTokens": 304007
+      },
+      "after": {
+        "units": 658459,
+        "utf8Bytes": 658459,
+        "documentNodes": 36005,
+        "lexicalTokens": 303687
+      },
+      "runs": [
+        {
+          "elapsedMs": 279.544958,
+          "maxRssKiB": 196672,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 133.009666,
+            "matchMs": 46.696124999999995,
+            "renderMs": 2.1608750000000043,
+            "validateMs": 97.230334,
+            "totalMs": 279.097
+          }
+        },
+        {
+          "elapsedMs": 277.420375,
+          "maxRssKiB": 196944,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 138.096,
+            "matchMs": 44.256417,
+            "renderMs": 2.426042000000024,
+            "validateMs": 92.14199999999997,
+            "totalMs": 276.920459
+          }
+        },
+        {
+          "elapsedMs": 279.355167,
+          "maxRssKiB": 197968,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 139.247708,
+            "matchMs": 43.29691700000001,
+            "renderMs": 2.232332999999983,
+            "validateMs": 94.13825,
+            "totalMs": 278.915208
+          }
+        }
+      ],
+      "artifact": "sparse-nested-4000-structural.json"
+    },
+    {
+      "fixture": "sparse-nested-4000",
+      "engine": "legacy",
+      "before": {
+        "units": 659579,
+        "utf8Bytes": 659579,
+        "documentNodes": 36005,
+        "lexicalTokens": 304007
+      },
+      "after": {
+        "units": 658459,
+        "utf8Bytes": 658459,
+        "documentNodes": 36005,
+        "lexicalTokens": 303687
+      },
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 2500
+        },
+        {
+          "outcome": "timeout",
+          "cutoffMs": 2500
+        },
+        {
+          "outcome": "timeout",
+          "cutoffMs": 2500
+        }
+      ],
+      "artifact": "sparse-nested-4000-legacy.json"
+    },
+    {
+      "fixture": "sparse-nested-4000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 659579,
+        "utf8Bytes": 659579,
+        "documentNodes": 36005,
+        "lexicalTokens": 304007
+      },
+      "after": {
+        "units": 658459,
+        "utf8Bytes": 658459,
+        "documentNodes": 36005,
+        "lexicalTokens": 303687
+      },
+      "runs": [
+        {
+          "elapsedMs": 24.476584000000003,
+          "maxRssKiB": 102528,
+          "outcome": "local-limit"
+        },
+        {
+          "elapsedMs": 25.363875,
+          "maxRssKiB": 102528,
+          "outcome": "local-limit"
+        },
+        {
+          "elapsedMs": 23.688541,
+          "maxRssKiB": 102448,
+          "outcome": "local-limit"
+        }
+      ],
+      "artifact": "sparse-nested-4000-jsdiff.json"
+    },
+    {
+      "fixture": "sparse-inserted-4000",
+      "engine": "structural",
+      "before": {
+        "units": 659579,
+        "utf8Bytes": 659579,
+        "documentNodes": 36005,
+        "lexicalTokens": 304007
+      },
+      "after": {
+        "units": 658481,
+        "utf8Bytes": 658481,
+        "documentNodes": 36007,
+        "lexicalTokens": 303698
+      },
+      "runs": [
+        {
+          "elapsedMs": 282.412542,
+          "maxRssKiB": 195712,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 138.57520799999998,
+            "matchMs": 47.85720900000001,
+            "renderMs": 2.5844160000000045,
+            "validateMs": 92.974875,
+            "totalMs": 281.991708
+          }
+        },
+        {
+          "elapsedMs": 286.063583,
+          "maxRssKiB": 197472,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 142.57662499999998,
+            "matchMs": 48.037083000000024,
+            "renderMs": 2.5159170000000017,
+            "validateMs": 92.499291,
+            "totalMs": 285.628916
+          }
+        },
+        {
+          "elapsedMs": 288.6515,
+          "maxRssKiB": 196336,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 143.08583399999998,
+            "matchMs": 46.568375,
+            "renderMs": 2.6103750000000048,
+            "validateMs": 95.965125,
+            "totalMs": 288.229709
+          }
+        }
+      ],
+      "artifact": "sparse-inserted-4000-structural.json"
+    },
+    {
+      "fixture": "sparse-inserted-4000",
+      "engine": "legacy",
+      "before": {
+        "units": 659579,
+        "utf8Bytes": 659579,
+        "documentNodes": 36005,
+        "lexicalTokens": 304007
+      },
+      "after": {
+        "units": 658481,
+        "utf8Bytes": 658481,
+        "documentNodes": 36007,
+        "lexicalTokens": 303698
+      },
+      "runs": [
+        {
+          "outcome": "timeout",
+          "cutoffMs": 2500
+        },
+        {
+          "outcome": "timeout",
+          "cutoffMs": 2500
+        },
+        {
+          "outcome": "timeout",
+          "cutoffMs": 2500
+        }
+      ],
+      "artifact": "sparse-inserted-4000-legacy.json"
+    },
+    {
+      "fixture": "sparse-inserted-4000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 659579,
+        "utf8Bytes": 659579,
+        "documentNodes": 36005,
+        "lexicalTokens": 304007
+      },
+      "after": {
+        "units": 658481,
+        "utf8Bytes": 658481,
+        "documentNodes": 36007,
+        "lexicalTokens": 303698
+      },
+      "runs": [
+        {
+          "elapsedMs": 26.165332999999997,
+          "maxRssKiB": 102624,
+          "outcome": "local-limit"
+        },
+        {
+          "elapsedMs": 24.188625000000002,
+          "maxRssKiB": 102432,
+          "outcome": "local-limit"
+        },
+        {
+          "elapsedMs": 26.073375,
+          "maxRssKiB": 102480,
+          "outcome": "local-limit"
+        }
+      ],
+      "artifact": "sparse-inserted-4000-jsdiff.json"
+    },
+    {
+      "fixture": "words",
+      "engine": "structural",
+      "before": {
+        "units": 23,
+        "utf8Bytes": 23,
+        "documentNodes": 6,
+        "lexicalTokens": 13
+      },
+      "after": {
+        "units": 23,
+        "utf8Bytes": 23,
+        "documentNodes": 6,
+        "lexicalTokens": 13
+      },
+      "runs": [
+        {
+          "elapsedMs": 4.744917000000001,
+          "maxRssKiB": 66096,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.5855409999999992,
+            "matchMs": 1.8961249999999978,
+            "renderMs": 0.03133400000000108,
+            "validateMs": 0.9378330000000048,
+            "totalMs": 4.450833000000003
+          }
+        }
+      ],
+      "artifact": "words-structural.json"
+    },
+    {
+      "fixture": "words",
+      "engine": "legacy",
+      "before": {
+        "units": 23,
+        "utf8Bytes": 23,
+        "documentNodes": 6,
+        "lexicalTokens": 13
+      },
+      "after": {
+        "units": 23,
+        "utf8Bytes": 23,
+        "documentNodes": 6,
+        "lexicalTokens": 13
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.1060000000000016,
+          "maxRssKiB": 65680,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "words-legacy.json"
+    },
+    {
+      "fixture": "words",
+      "engine": "jsdiff",
+      "before": {
+        "units": 23,
+        "utf8Bytes": 23,
+        "documentNodes": 6,
+        "lexicalTokens": 13
+      },
+      "after": {
+        "units": 23,
+        "utf8Bytes": 23,
+        "documentNodes": 6,
+        "lexicalTokens": 13
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.47424999999999784,
+          "maxRssKiB": 65456,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "words-jsdiff.json"
+    },
+    {
+      "fixture": "nested insertion",
+      "engine": "structural",
+      "before": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 10,
+        "lexicalTokens": 30
+      },
+      "after": {
+        "units": 58,
+        "utf8Bytes": 58,
+        "documentNodes": 12,
+        "lexicalTokens": 38
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.2234589999999983,
+          "maxRssKiB": 66368,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.8723330000000047,
+            "matchMs": 0.4530419999999964,
+            "renderMs": 0.038041999999997245,
+            "validateMs": 0.5263750000000016,
+            "totalMs": 2.889792
+          }
+        }
+      ],
+      "artifact": "nested insertion-structural.json"
+    },
+    {
+      "fixture": "nested insertion",
+      "engine": "legacy",
+      "before": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 10,
+        "lexicalTokens": 30
+      },
+      "after": {
+        "units": 58,
+        "utf8Bytes": 58,
+        "documentNodes": 12,
+        "lexicalTokens": 38
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.1024579999999986,
+          "maxRssKiB": 65072,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "nested insertion-legacy.json"
+    },
+    {
+      "fixture": "nested insertion",
+      "engine": "jsdiff",
+      "before": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 10,
+        "lexicalTokens": 30
+      },
+      "after": {
+        "units": 58,
+        "utf8Bytes": 58,
+        "documentNodes": 12,
+        "lexicalTokens": 38
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.47825000000000273,
+          "maxRssKiB": 65152,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "nested insertion-jsdiff.json"
+    },
+    {
+      "fixture": "repetition",
+      "engine": "structural",
+      "before": {
+        "units": 27,
+        "utf8Bytes": 27,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 35,
+        "utf8Bytes": 35,
+        "documentNodes": 11,
+        "lexicalTokens": 31
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.0073330000000027,
+          "maxRssKiB": 66384,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.7596670000000003,
+            "matchMs": 0.4157079999999951,
+            "renderMs": 0.03637500000000671,
+            "validateMs": 0.504374999999996,
+            "totalMs": 2.716124999999998
+          }
+        }
+      ],
+      "artifact": "repetition-structural.json"
+    },
+    {
+      "fixture": "repetition",
+      "engine": "legacy",
+      "before": {
+        "units": 27,
+        "utf8Bytes": 27,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 35,
+        "utf8Bytes": 35,
+        "documentNodes": 11,
+        "lexicalTokens": 31
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.1417089999999988,
+          "maxRssKiB": 65584,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "repetition-legacy.json"
+    },
+    {
+      "fixture": "repetition",
+      "engine": "jsdiff",
+      "before": {
+        "units": 27,
+        "utf8Bytes": 27,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 35,
+        "utf8Bytes": 35,
+        "documentNodes": 11,
+        "lexicalTokens": 31
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.4828329999999994,
+          "maxRssKiB": 65424,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "repetition-jsdiff.json"
+    },
+    {
+      "fixture": "list",
+      "engine": "structural",
+      "before": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.3974580000000003,
+          "maxRssKiB": 65552,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.7552500000000038,
+            "matchMs": 0.5417920000000009,
+            "renderMs": 0.03229199999999821,
+            "validateMs": 0.7278749999999974,
+            "totalMs": 3.0572090000000003
+          }
+        }
+      ],
+      "artifact": "list-structural.json"
+    },
+    {
+      "fixture": "list",
+      "engine": "legacy",
+      "before": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.3369590000000002,
+          "maxRssKiB": 65936,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "list-legacy.json"
+    },
+    {
+      "fixture": "list",
+      "engine": "jsdiff",
+      "before": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.5384999999999991,
+          "maxRssKiB": 65232,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "list-jsdiff.json"
+    },
+    {
+      "fixture": "table",
+      "engine": "structural",
+      "before": {
+        "units": 44,
+        "utf8Bytes": 44,
+        "documentNodes": 11,
+        "lexicalTokens": 30
+      },
+      "after": {
+        "units": 71,
+        "utf8Bytes": 71,
+        "documentNodes": 14,
+        "lexicalTokens": 45
+      },
+      "runs": [
+        {
+          "elapsedMs": 5.186665999999999,
+          "maxRssKiB": 65984,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.9059580000000018,
+            "matchMs": 1.9749999999999943,
+            "renderMs": 0.037041999999999575,
+            "validateMs": 0.9735420000000019,
+            "totalMs": 4.891541999999998
+          }
+        }
+      ],
+      "artifact": "table-structural.json"
+    },
+    {
+      "fixture": "table",
+      "engine": "legacy",
+      "before": {
+        "units": 44,
+        "utf8Bytes": 44,
+        "documentNodes": 11,
+        "lexicalTokens": 30
+      },
+      "after": {
+        "units": 71,
+        "utf8Bytes": 71,
+        "documentNodes": 14,
+        "lexicalTokens": 45
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.2689579999999978,
+          "maxRssKiB": 65232,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "table-legacy.json"
+    },
+    {
+      "fixture": "table",
+      "engine": "jsdiff",
+      "before": {
+        "units": 44,
+        "utf8Bytes": 44,
+        "documentNodes": 11,
+        "lexicalTokens": 30
+      },
+      "after": {
+        "units": 71,
+        "utf8Bytes": 71,
+        "documentNodes": 14,
+        "lexicalTokens": 45
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.5662920000000042,
+          "maxRssKiB": 65216,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "table-jsdiff.json"
+    },
+    {
+      "fixture": "attributes",
+      "engine": "structural",
+      "before": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 6,
+        "lexicalTokens": 24
+      },
+      "after": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 6,
+        "lexicalTokens": 24
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.7552500000000038,
+          "maxRssKiB": 65728,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.6460410000000039,
+            "matchMs": 0.38862499999999756,
+            "renderMs": 0.026125000000000398,
+            "validateMs": 0.4123340000000013,
+            "totalMs": 2.473125000000003
+          }
+        }
+      ],
+      "artifact": "attributes-structural.json"
+    },
+    {
+      "fixture": "attributes",
+      "engine": "legacy",
+      "before": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 6,
+        "lexicalTokens": 24
+      },
+      "after": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 6,
+        "lexicalTokens": 24
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.0272500000000022,
+          "maxRssKiB": 65776,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "attributes-legacy.json"
+    },
+    {
+      "fixture": "attributes",
+      "engine": "jsdiff",
+      "before": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 6,
+        "lexicalTokens": 24
+      },
+      "after": {
+        "units": 29,
+        "utf8Bytes": 29,
+        "documentNodes": 6,
+        "lexicalTokens": 24
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.4899999999999949,
+          "maxRssKiB": 65760,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "attributes-jsdiff.json"
+    },
+    {
+      "fixture": "attribute text shell",
+      "engine": "structural",
+      "before": {
+        "units": 22,
+        "utf8Bytes": 22,
+        "documentNodes": 6,
+        "lexicalTokens": 18
+      },
+      "after": {
+        "units": 22,
+        "utf8Bytes": 22,
+        "documentNodes": 6,
+        "lexicalTokens": 18
+      },
+      "runs": [
+        {
+          "elapsedMs": 4.417041000000005,
+          "maxRssKiB": 65984,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.6820409999999981,
+            "matchMs": 1.8699590000000015,
+            "renderMs": 0.027791000000000565,
+            "validateMs": 0.549749999999996,
+            "totalMs": 4.129540999999996
+          }
+        }
+      ],
+      "artifact": "attribute text shell-structural.json"
+    },
+    {
+      "fixture": "attribute text shell",
+      "engine": "legacy",
+      "before": {
+        "units": 22,
+        "utf8Bytes": 22,
+        "documentNodes": 6,
+        "lexicalTokens": 18
+      },
+      "after": {
+        "units": 22,
+        "utf8Bytes": 22,
+        "documentNodes": 6,
+        "lexicalTokens": 18
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.0685000000000002,
+          "maxRssKiB": 65248,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "attribute text shell-legacy.json"
+    },
+    {
+      "fixture": "attribute text shell",
+      "engine": "jsdiff",
+      "before": {
+        "units": 22,
+        "utf8Bytes": 22,
+        "documentNodes": 6,
+        "lexicalTokens": 18
+      },
+      "after": {
+        "units": 22,
+        "utf8Bytes": 22,
+        "documentNodes": 6,
+        "lexicalTokens": 18
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.4836250000000035,
+          "maxRssKiB": 64960,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "attribute text shell-jsdiff.json"
+    },
+    {
+      "fixture": "void and empty",
+      "engine": "structural",
+      "before": {
+        "units": 39,
+        "utf8Bytes": 39,
+        "documentNodes": 9,
+        "lexicalTokens": 29
+      },
+      "after": {
+        "units": 52,
+        "utf8Bytes": 52,
+        "documentNodes": 10,
+        "lexicalTokens": 36
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.979542000000002,
+          "maxRssKiB": 66208,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.6848329999999976,
+            "matchMs": 0.5153750000000059,
+            "renderMs": 0.036417000000000144,
+            "validateMs": 0.4578330000000008,
+            "totalMs": 2.6944580000000045
+          }
+        }
+      ],
+      "artifact": "void and empty-structural.json"
+    },
+    {
+      "fixture": "void and empty",
+      "engine": "legacy",
+      "before": {
+        "units": 39,
+        "utf8Bytes": 39,
+        "documentNodes": 9,
+        "lexicalTokens": 29
+      },
+      "after": {
+        "units": 52,
+        "utf8Bytes": 52,
+        "documentNodes": 10,
+        "lexicalTokens": 36
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.1072500000000005,
+          "maxRssKiB": 65568,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "void and empty-legacy.json"
+    },
+    {
+      "fixture": "void and empty",
+      "engine": "jsdiff",
+      "before": {
+        "units": 39,
+        "utf8Bytes": 39,
+        "documentNodes": 9,
+        "lexicalTokens": 29
+      },
+      "after": {
+        "units": 52,
+        "utf8Bytes": 52,
+        "documentNodes": 10,
+        "lexicalTokens": 36
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.47808299999999804,
+          "maxRssKiB": 65424,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "void and empty-jsdiff.json"
+    },
+    {
+      "fixture": "formatting",
+      "engine": "structural",
+      "before": {
+        "units": 39,
+        "utf8Bytes": 39,
+        "documentNodes": 9,
+        "lexicalTokens": 21
+      },
+      "after": {
+        "units": 33,
+        "utf8Bytes": 33,
+        "documentNodes": 9,
+        "lexicalTokens": 21
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.1971249999999998,
+          "maxRssKiB": 66160,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.8770000000000024,
+            "matchMs": 0.42379199999999884,
+            "renderMs": 0.03266699999999645,
+            "validateMs": 0.572291000000007,
+            "totalMs": 2.9057500000000047
+          }
+        }
+      ],
+      "artifact": "formatting-structural.json"
+    },
+    {
+      "fixture": "formatting",
+      "engine": "legacy",
+      "before": {
+        "units": 39,
+        "utf8Bytes": 39,
+        "documentNodes": 9,
+        "lexicalTokens": 21
+      },
+      "after": {
+        "units": 33,
+        "utf8Bytes": 33,
+        "documentNodes": 9,
+        "lexicalTokens": 21
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.2842500000000001,
+          "maxRssKiB": 65584,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "formatting-legacy.json"
+    },
+    {
+      "fixture": "formatting",
+      "engine": "jsdiff",
+      "before": {
+        "units": 39,
+        "utf8Bytes": 39,
+        "documentNodes": 9,
+        "lexicalTokens": 21
+      },
+      "after": {
+        "units": 33,
+        "utf8Bytes": 33,
+        "documentNodes": 9,
+        "lexicalTokens": 21
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.5017080000000007,
+          "maxRssKiB": 65392,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "formatting-jsdiff.json"
+    },
+    {
+      "fixture": "unicode entities",
+      "engine": "structural",
+      "before": {
+        "units": 31,
+        "utf8Bytes": 45,
+        "documentNodes": 6,
+        "lexicalTokens": 21
+      },
+      "after": {
+        "units": 33,
+        "utf8Bytes": 47,
+        "documentNodes": 6,
+        "lexicalTokens": 23
+      },
+      "runs": [
+        {
+          "elapsedMs": 6.537292000000004,
+          "maxRssKiB": 66368,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.8100839999999963,
+            "matchMs": 3.2380410000000026,
+            "renderMs": 0.033292000000002986,
+            "validateMs": 1.0410830000000004,
+            "totalMs": 6.122500000000002
+          }
+        }
+      ],
+      "artifact": "unicode entities-structural.json"
+    },
+    {
+      "fixture": "unicode entities",
+      "engine": "legacy",
+      "before": {
+        "units": 31,
+        "utf8Bytes": 45,
+        "documentNodes": 6,
+        "lexicalTokens": 21
+      },
+      "after": {
+        "units": 33,
+        "utf8Bytes": 47,
+        "documentNodes": 6,
+        "lexicalTokens": 23
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.525540999999997,
+          "maxRssKiB": 65824,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "unicode entities-legacy.json"
+    },
+    {
+      "fixture": "unicode entities",
+      "engine": "jsdiff",
+      "before": {
+        "units": 31,
+        "utf8Bytes": 45,
+        "documentNodes": 6,
+        "lexicalTokens": 21
+      },
+      "after": {
+        "units": 33,
+        "utf8Bytes": 47,
+        "documentNodes": 6,
+        "lexicalTokens": 23
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.532625000000003,
+          "maxRssKiB": 65824,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "unicode entities-jsdiff.json"
+    },
+    {
+      "fixture": "whitespace",
+      "engine": "structural",
+      "before": {
+        "units": 36,
+        "utf8Bytes": 36,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "after": {
+        "units": 36,
+        "utf8Bytes": 36,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "runs": [
+        {
+          "elapsedMs": 4.851000000000006,
+          "maxRssKiB": 66480,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.6937089999999984,
+            "matchMs": 1.9499580000000023,
+            "renderMs": 0.03512500000000074,
+            "validateMs": 0.8720420000000004,
+            "totalMs": 4.550834000000002
+          }
+        }
+      ],
+      "artifact": "whitespace-structural.json"
+    },
+    {
+      "fixture": "whitespace",
+      "engine": "legacy",
+      "before": {
+        "units": 36,
+        "utf8Bytes": 36,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "after": {
+        "units": 36,
+        "utf8Bytes": 36,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.9299579999999992,
+          "maxRssKiB": 65344,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "whitespace-legacy.json"
+    },
+    {
+      "fixture": "whitespace",
+      "engine": "jsdiff",
+      "before": {
+        "units": 36,
+        "utf8Bytes": 36,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "after": {
+        "units": 36,
+        "utf8Bytes": 36,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.6674590000000009,
+          "maxRssKiB": 65184,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "whitespace-jsdiff.json"
+    },
+    {
+      "fixture": "malformed",
+      "engine": "structural",
+      "before": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 8,
+        "lexicalTokens": 8
+      },
+      "after": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 8,
+        "lexicalTokens": 8
+      },
+      "runs": [
+        {
+          "elapsedMs": 4.614041999999998,
+          "maxRssKiB": 65728,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.4504999999999981,
+            "matchMs": 1.9681250000000006,
+            "renderMs": 0.03170899999999932,
+            "validateMs": 0.849499999999999,
+            "totalMs": 4.299833999999997
+          }
+        }
+      ],
+      "artifact": "malformed-structural.json"
+    },
+    {
+      "fixture": "malformed",
+      "engine": "legacy",
+      "before": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 8,
+        "lexicalTokens": 8
+      },
+      "after": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 8,
+        "lexicalTokens": 8
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.0097090000000009,
+          "maxRssKiB": 65232,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "malformed-legacy.json"
+    },
+    {
+      "fixture": "malformed",
+      "engine": "jsdiff",
+      "before": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 8,
+        "lexicalTokens": 8
+      },
+      "after": {
+        "units": 8,
+        "utf8Bytes": 8,
+        "documentNodes": 8,
+        "lexicalTokens": 8
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.5685840000000013,
+          "maxRssKiB": 65392,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "malformed-jsdiff.json"
+    },
+    {
+      "fixture": "select",
+      "engine": "structural",
+      "before": {
+        "units": 35,
+        "utf8Bytes": 35,
+        "documentNodes": 7,
+        "lexicalTokens": 15
+      },
+      "after": {
+        "units": 44,
+        "utf8Bytes": 44,
+        "documentNodes": 7,
+        "lexicalTokens": 17
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.206707999999999,
+          "maxRssKiB": 66288,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.8582919999999987,
+            "matchMs": 0.4342499999999987,
+            "renderMs": 0.032083000000000084,
+            "validateMs": 0.5407080000000022,
+            "totalMs": 2.8653329999999997
+          }
+        }
+      ],
+      "artifact": "select-structural.json"
+    },
+    {
+      "fixture": "select",
+      "engine": "legacy",
+      "before": {
+        "units": 35,
+        "utf8Bytes": 35,
+        "documentNodes": 7,
+        "lexicalTokens": 15
+      },
+      "after": {
+        "units": 44,
+        "utf8Bytes": 44,
+        "documentNodes": 7,
+        "lexicalTokens": 17
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.1092080000000024,
+          "maxRssKiB": 65344,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "select-legacy.json"
+    },
+    {
+      "fixture": "select",
+      "engine": "jsdiff",
+      "before": {
+        "units": 35,
+        "utf8Bytes": 35,
+        "documentNodes": 7,
+        "lexicalTokens": 15
+      },
+      "after": {
+        "units": 44,
+        "utf8Bytes": 44,
+        "documentNodes": 7,
+        "lexicalTokens": 17
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.4641250000000028,
+          "maxRssKiB": 65344,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "select-jsdiff.json"
+    },
+    {
+      "fixture": "foreign",
+      "engine": "structural",
+      "before": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 6,
+        "lexicalTokens": 29
+      },
+      "after": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 6,
+        "lexicalTokens": 29
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.7835409999999996,
+          "maxRssKiB": 65968,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.5094169999999991,
+            "matchMs": 0.471541000000002,
+            "renderMs": 0.02645899999999557,
+            "validateMs": 0.5011660000000049,
+            "totalMs": 2.5085830000000016
+          }
+        }
+      ],
+      "artifact": "foreign-structural.json"
+    },
+    {
+      "fixture": "foreign",
+      "engine": "legacy",
+      "before": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 6,
+        "lexicalTokens": 29
+      },
+      "after": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 6,
+        "lexicalTokens": 29
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.9394169999999988,
+          "maxRssKiB": 65216,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "foreign-legacy.json"
+    },
+    {
+      "fixture": "foreign",
+      "engine": "jsdiff",
+      "before": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 6,
+        "lexicalTokens": 29
+      },
+      "after": {
+        "units": 46,
+        "utf8Bytes": 46,
+        "documentNodes": 6,
+        "lexicalTokens": 29
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.42770900000000367,
+          "maxRssKiB": 65120,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "foreign-jsdiff.json"
+    },
+    {
+      "fixture": "unrelated",
+      "engine": "structural",
+      "before": {
+        "units": 37,
+        "utf8Bytes": 37,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 34,
+        "utf8Bytes": 34,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.309207999999998,
+          "maxRssKiB": 65872,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 1.946832999999998,
+            "matchMs": 0.3990000000000009,
+            "renderMs": 0.0297079999999994,
+            "validateMs": 0.6355840000000015,
+            "totalMs": 3.011125
+          }
+        }
+      ],
+      "artifact": "unrelated-structural.json"
+    },
+    {
+      "fixture": "unrelated",
+      "engine": "legacy",
+      "before": {
+        "units": 37,
+        "utf8Bytes": 37,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 34,
+        "utf8Bytes": 34,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.0612500000000047,
+          "maxRssKiB": 65392,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "unrelated-legacy.json"
+    },
+    {
+      "fixture": "unrelated",
+      "engine": "jsdiff",
+      "before": {
+        "units": 37,
+        "utf8Bytes": 37,
+        "documentNodes": 9,
+        "lexicalTokens": 23
+      },
+      "after": {
+        "units": 34,
+        "utf8Bytes": 34,
+        "documentNodes": 9,
+        "lexicalTokens": 22
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.6600830000000002,
+          "maxRssKiB": 65696,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "unrelated-jsdiff.json"
+    },
+    {
+      "fixture": "legacy-collection-guide",
+      "engine": "structural",
+      "before": {
+        "units": 1508,
+        "utf8Bytes": 1512,
+        "documentNodes": 66,
+        "lexicalTokens": 511
+      },
+      "after": {
+        "units": 1580,
+        "utf8Bytes": 1584,
+        "documentNodes": 69,
+        "lexicalTokens": 537
+      },
+      "runs": [
+        {
+          "elapsedMs": 7.975332999999999,
+          "maxRssKiB": 68032,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 3.8527500000000003,
+            "matchMs": 2.570999999999998,
+            "renderMs": 0.07241700000000151,
+            "validateMs": 1.088000000000001,
+            "totalMs": 7.584167000000001
+          }
+        }
+      ],
+      "artifact": "legacy-collection-guide-structural.json"
+    },
+    {
+      "fixture": "legacy-collection-guide",
+      "engine": "legacy",
+      "before": {
+        "units": 1508,
+        "utf8Bytes": 1512,
+        "documentNodes": 66,
+        "lexicalTokens": 511
+      },
+      "after": {
+        "units": 1580,
+        "utf8Bytes": 1584,
+        "documentNodes": 69,
+        "lexicalTokens": 537
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.6576669999999964,
+          "maxRssKiB": 66720,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "legacy-collection-guide-legacy.json"
+    },
+    {
+      "fixture": "legacy-collection-guide",
+      "engine": "jsdiff",
+      "before": {
+        "units": 1508,
+        "utf8Bytes": 1512,
+        "documentNodes": 66,
+        "lexicalTokens": 511
+      },
+      "after": {
+        "units": 1580,
+        "utf8Bytes": 1584,
+        "documentNodes": 69,
+        "lexicalTokens": 537
+      },
+      "runs": [
+        {
+          "elapsedMs": 0.955999999999996,
+          "maxRssKiB": 65424,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "legacy-collection-guide-jsdiff.json"
+    },
+    {
+      "fixture": "legacy-transaction-guide",
+      "engine": "structural",
+      "before": {
+        "units": 4447,
+        "utf8Bytes": 4463,
+        "documentNodes": 300,
+        "lexicalTokens": 1634
+      },
+      "after": {
+        "units": 5409,
+        "utf8Bytes": 5429,
+        "documentNodes": 353,
+        "lexicalTokens": 1998
+      },
+      "runs": [
+        {
+          "elapsedMs": 14.860708000000002,
+          "maxRssKiB": 71088,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 7.328541999999999,
+            "matchMs": 3.003833,
+            "renderMs": 0.09675000000000011,
+            "validateMs": 4.022041999999999,
+            "totalMs": 14.451166999999998
+          }
+        }
+      ],
+      "artifact": "legacy-transaction-guide-structural.json"
+    },
+    {
+      "fixture": "legacy-transaction-guide",
+      "engine": "legacy",
+      "before": {
+        "units": 4447,
+        "utf8Bytes": 4463,
+        "documentNodes": 300,
+        "lexicalTokens": 1634
+      },
+      "after": {
+        "units": 5409,
+        "utf8Bytes": 5429,
+        "documentNodes": 353,
+        "lexicalTokens": 1998
+      },
+      "runs": [
+        {
+          "elapsedMs": 5.169083999999998,
+          "maxRssKiB": 69040,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "legacy-transaction-guide-legacy.json"
+    },
+    {
+      "fixture": "legacy-transaction-guide",
+      "engine": "jsdiff",
+      "before": {
+        "units": 4447,
+        "utf8Bytes": 4463,
+        "documentNodes": 300,
+        "lexicalTokens": 1634
+      },
+      "after": {
+        "units": 5409,
+        "utf8Bytes": 5429,
+        "documentNodes": 353,
+        "lexicalTokens": 1998
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.6282919999999947,
+          "maxRssKiB": 66512,
+          "outcome": "local-limit"
+        }
+      ],
+      "artifact": "legacy-transaction-guide-jsdiff.json"
+    },
+    {
+      "fixture": "legacy-welcome-pack",
+      "engine": "structural",
+      "before": {
+        "units": 1336,
+        "utf8Bytes": 1340,
+        "documentNodes": 66,
+        "lexicalTokens": 444
+      },
+      "after": {
+        "units": 1432,
+        "utf8Bytes": 1436,
+        "documentNodes": 69,
+        "lexicalTokens": 473
+      },
+      "runs": [
+        {
+          "elapsedMs": 7.810458000000004,
+          "maxRssKiB": 67696,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 3.611542,
+            "matchMs": 2.5683329999999955,
+            "renderMs": 0.07095800000000452,
+            "validateMs": 1.2575840000000014,
+            "totalMs": 7.5084170000000015
+          }
+        }
+      ],
+      "artifact": "legacy-welcome-pack-structural.json"
+    },
+    {
+      "fixture": "legacy-welcome-pack",
+      "engine": "legacy",
+      "before": {
+        "units": 1336,
+        "utf8Bytes": 1340,
+        "documentNodes": 66,
+        "lexicalTokens": 444
+      },
+      "after": {
+        "units": 1432,
+        "utf8Bytes": 1436,
+        "documentNodes": 69,
+        "lexicalTokens": 473
+      },
+      "runs": [
+        {
+          "elapsedMs": 2.4118330000000014,
+          "maxRssKiB": 66576,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "legacy-welcome-pack-legacy.json"
+    },
+    {
+      "fixture": "legacy-welcome-pack",
+      "engine": "jsdiff",
+      "before": {
+        "units": 1336,
+        "utf8Bytes": 1340,
+        "documentNodes": 66,
+        "lexicalTokens": 444
+      },
+      "after": {
+        "units": 1432,
+        "utf8Bytes": 1436,
+        "documentNodes": 69,
+        "lexicalTokens": 473
+      },
+      "runs": [
+        {
+          "elapsedMs": 1.1518330000000034,
+          "maxRssKiB": 65744,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "legacy-welcome-pack-jsdiff.json"
+    },
+    {
+      "fixture": "nested-2000",
+      "engine": "structural",
+      "before": {
+        "units": 128920,
+        "utf8Bytes": 128920,
+        "documentNodes": 4006,
+        "lexicalTokens": 60014
+      },
+      "after": {
+        "units": 128949,
+        "utf8Bytes": 128949,
+        "documentNodes": 4008,
+        "lexicalTokens": 60029
+      },
+      "runs": [
+        {
+          "elapsedMs": 52.962625,
+          "maxRssKiB": 93584,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 27.470999999999997,
+            "matchMs": 7.270375000000001,
+            "renderMs": 0.4432079999999985,
+            "validateMs": 17.403791999999996,
+            "totalMs": 52.58837499999999
+          }
+        },
+        {
+          "elapsedMs": 51.996292000000004,
+          "maxRssKiB": 92528,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 27.010084,
+            "matchMs": 7.547375000000002,
+            "renderMs": 0.41004099999999255,
+            "validateMs": 16.626500000000007,
+            "totalMs": 51.594
+          }
+        },
+        {
+          "elapsedMs": 51.479916,
+          "maxRssKiB": 93392,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 27.514458000000005,
+            "matchMs": 7.405000000000001,
+            "renderMs": 0.48691699999999116,
+            "validateMs": 15.631917000000001,
+            "totalMs": 51.038292
+          }
+        }
+      ],
+      "artifact": "nested-2000-structural.json"
+    },
+    {
+      "fixture": "nested-2000",
+      "engine": "legacy",
+      "before": {
+        "units": 128920,
+        "utf8Bytes": 128920,
+        "documentNodes": 4006,
+        "lexicalTokens": 60014
+      },
+      "after": {
+        "units": 128949,
+        "utf8Bytes": 128949,
+        "documentNodes": 4008,
+        "lexicalTokens": 60029
+      },
+      "runs": [
+        {
+          "elapsedMs": 35.138625,
+          "maxRssKiB": 90608,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 35.7815,
+          "maxRssKiB": 91328,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 34.95825,
+          "maxRssKiB": 91184,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "nested-2000-legacy.json"
+    },
+    {
+      "fixture": "nested-2000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 128920,
+        "utf8Bytes": 128920,
+        "documentNodes": 4006,
+        "lexicalTokens": 60014
+      },
+      "after": {
+        "units": 128949,
+        "utf8Bytes": 128949,
+        "documentNodes": 4008,
+        "lexicalTokens": 60029
+      },
+      "runs": [
+        {
+          "elapsedMs": 5.982792000000003,
+          "maxRssKiB": 74848,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 6.436916,
+          "maxRssKiB": 74480,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 5.866957999999997,
+          "maxRssKiB": 74416,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "nested-2000-jsdiff.json"
+    },
+    {
+      "fixture": "nested-6000",
+      "engine": "structural",
+      "before": {
+        "units": 388920,
+        "utf8Bytes": 388920,
+        "documentNodes": 12006,
+        "lexicalTokens": 180014
+      },
+      "after": {
+        "units": 388949,
+        "utf8Bytes": 388949,
+        "documentNodes": 12008,
+        "lexicalTokens": 180029
+      },
+      "runs": [
+        {
+          "elapsedMs": 140.540541,
+          "maxRssKiB": 157008,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 69.04454199999999,
+            "matchMs": 19.878500000000003,
+            "renderMs": 0.8616659999999996,
+            "validateMs": 50.34837499999999,
+            "totalMs": 140.133083
+          }
+        },
+        {
+          "elapsedMs": 139.15800000000002,
+          "maxRssKiB": 157568,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 70.036125,
+            "matchMs": 19.663832999999997,
+            "renderMs": 0.943792000000002,
+            "validateMs": 48.09629100000001,
+            "totalMs": 138.74004100000002
+          }
+        },
+        {
+          "elapsedMs": 141.439791,
+          "maxRssKiB": 157008,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 69.967416,
+            "matchMs": 20.017542000000006,
+            "renderMs": 0.9474579999999975,
+            "validateMs": 50.087333999999984,
+            "totalMs": 141.01975
+          }
+        }
+      ],
+      "artifact": "nested-6000-structural.json"
+    },
+    {
+      "fixture": "nested-6000",
+      "engine": "legacy",
+      "before": {
+        "units": 388920,
+        "utf8Bytes": 388920,
+        "documentNodes": 12006,
+        "lexicalTokens": 180014
+      },
+      "after": {
+        "units": 388949,
+        "utf8Bytes": 388949,
+        "documentNodes": 12008,
+        "lexicalTokens": 180029
+      },
+      "runs": [
+        {
+          "elapsedMs": 92.574625,
+          "maxRssKiB": 128992,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 93.371208,
+          "maxRssKiB": 127008,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 93.890584,
+          "maxRssKiB": 127040,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "nested-6000-legacy.json"
+    },
+    {
+      "fixture": "nested-6000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 388920,
+        "utf8Bytes": 388920,
+        "documentNodes": 12006,
+        "lexicalTokens": 180014
+      },
+      "after": {
+        "units": 388949,
+        "utf8Bytes": 388949,
+        "documentNodes": 12008,
+        "lexicalTokens": 180029
+      },
+      "runs": [
+        {
+          "elapsedMs": 19.743875000000003,
+          "maxRssKiB": 93600,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 19.516958,
+          "maxRssKiB": 93168,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 18.609207999999995,
+          "maxRssKiB": 93584,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "nested-6000-jsdiff.json"
+    },
+    {
+      "fixture": "flat-6000",
+      "engine": "structural",
+      "before": {
+        "units": 388890,
+        "utf8Bytes": 388890,
+        "documentNodes": 12004,
+        "lexicalTokens": 180000
+      },
+      "after": {
+        "units": 388919,
+        "utf8Bytes": 388919,
+        "documentNodes": 12006,
+        "lexicalTokens": 180015
+      },
+      "runs": [
+        {
+          "elapsedMs": 178.64020799999997,
+          "maxRssKiB": 159200,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 99.44375,
+            "matchMs": 21.19262500000002,
+            "renderMs": 1.0192499999999995,
+            "validateMs": 56.527416999999986,
+            "totalMs": 178.183042
+          }
+        },
+        {
+          "elapsedMs": 183.06425000000002,
+          "maxRssKiB": 158816,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 101.848041,
+            "matchMs": 21.569542000000013,
+            "renderMs": 1.0516250000000014,
+            "validateMs": 58.16512499999999,
+            "totalMs": 182.634333
+          }
+        },
+        {
+          "elapsedMs": 184.354916,
+          "maxRssKiB": 158496,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 104.384625,
+            "matchMs": 22.080457999999993,
+            "renderMs": 1.1543749999999875,
+            "validateMs": 56.347667,
+            "totalMs": 183.96712499999998
+          }
+        }
+      ],
+      "artifact": "flat-6000-structural.json"
+    },
+    {
+      "fixture": "flat-6000",
+      "engine": "legacy",
+      "before": {
+        "units": 388890,
+        "utf8Bytes": 388890,
+        "documentNodes": 12004,
+        "lexicalTokens": 180000
+      },
+      "after": {
+        "units": 388919,
+        "utf8Bytes": 388919,
+        "documentNodes": 12006,
+        "lexicalTokens": 180015
+      },
+      "runs": [
+        {
+          "elapsedMs": 93.93712500000001,
+          "maxRssKiB": 128336,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 94.816458,
+          "maxRssKiB": 127152,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 92.812375,
+          "maxRssKiB": 127344,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "flat-6000-legacy.json"
+    },
+    {
+      "fixture": "flat-6000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 388890,
+        "utf8Bytes": 388890,
+        "documentNodes": 12004,
+        "lexicalTokens": 180000
+      },
+      "after": {
+        "units": 388919,
+        "utf8Bytes": 388919,
+        "documentNodes": 12006,
+        "lexicalTokens": 180015
+      },
+      "runs": [
+        {
+          "elapsedMs": 18.739875000000005,
+          "maxRssKiB": 93264,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 18.637874999999994,
+          "maxRssKiB": 93600,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 18.5985,
+          "maxRssKiB": 93808,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "flat-6000-jsdiff.json"
+    },
+    {
+      "fixture": "repeated-6000",
+      "engine": "structural",
+      "before": {
+        "units": 126011,
+        "utf8Bytes": 126011,
+        "documentNodes": 12005,
+        "lexicalTokens": 60007
+      },
+      "after": {
+        "units": 126026,
+        "utf8Bytes": 126026,
+        "documentNodes": 12007,
+        "lexicalTokens": 60015
+      },
+      "runs": [
+        {
+          "elapsedMs": 81.84704199999999,
+          "maxRssKiB": 114032,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 36.388459000000005,
+            "matchMs": 11.78649999999999,
+            "renderMs": 1.6865829999999988,
+            "validateMs": 31.60154200000001,
+            "totalMs": 81.46308400000001
+          }
+        },
+        {
+          "elapsedMs": 85.58295799999999,
+          "maxRssKiB": 113728,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 36.817708999999994,
+            "matchMs": 12.346291000000008,
+            "renderMs": 1.593166999999994,
+            "validateMs": 34.402167000000006,
+            "totalMs": 85.159334
+          }
+        },
+        {
+          "elapsedMs": 81.537375,
+          "maxRssKiB": 113680,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 35.681833000000005,
+            "matchMs": 12.086249999999993,
+            "renderMs": 0.8979170000000067,
+            "validateMs": 32.453458,
+            "totalMs": 81.11945800000001
+          }
+        }
+      ],
+      "artifact": "repeated-6000-structural.json"
+    },
+    {
+      "fixture": "repeated-6000",
+      "engine": "legacy",
+      "before": {
+        "units": 126011,
+        "utf8Bytes": 126011,
+        "documentNodes": 12005,
+        "lexicalTokens": 60007
+      },
+      "after": {
+        "units": 126026,
+        "utf8Bytes": 126026,
+        "documentNodes": 12007,
+        "lexicalTokens": 60015
+      },
+      "runs": [
+        {
+          "elapsedMs": 30.1755,
+          "maxRssKiB": 88320,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 29.826124999999998,
+          "maxRssKiB": 88336,
+          "outcome": "rendered"
+        },
+        {
+          "elapsedMs": 30.050540999999996,
+          "maxRssKiB": 88640,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "repeated-6000-legacy.json"
+    },
+    {
+      "fixture": "repeated-6000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 126011,
+        "utf8Bytes": 126011,
+        "documentNodes": 12005,
+        "lexicalTokens": 60007
+      },
+      "after": {
+        "units": 126026,
+        "utf8Bytes": 126026,
+        "documentNodes": 12007,
+        "lexicalTokens": 60015
+      },
+      "runs": [
+        {
+          "elapsedMs": 5.806542,
+          "maxRssKiB": 74480,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 5.937208000000005,
+          "maxRssKiB": 74384,
+          "outcome": "matched"
+        },
+        {
+          "elapsedMs": 5.8459999999999965,
+          "maxRssKiB": 74336,
+          "outcome": "matched"
+        }
+      ],
+      "artifact": "repeated-6000-jsdiff.json"
+    },
+    {
+      "fixture": "unrelated-3000",
+      "engine": "structural",
+      "before": {
+        "units": 39000,
+        "utf8Bytes": 39000,
+        "documentNodes": 6004,
+        "lexicalTokens": 24000
+      },
+      "after": {
+        "units": 72000,
+        "utf8Bytes": 72000,
+        "documentNodes": 6004,
+        "lexicalTokens": 24000
+      },
+      "runs": [
+        {
+          "elapsedMs": 89.926167,
+          "maxRssKiB": 114256,
+          "outcome": "success",
+          "timings": {
+            "parseMs": 21.076083000000004,
+            "matchMs": 8.565000000000005,
+            "renderMs": 1.4173749999999927,
+            "validateMs": 58.426083000000006,
+            "totalMs": 89.48454100000001
+          }
+        }
+      ],
+      "artifact": "unrelated-3000-structural.json"
+    },
+    {
+      "fixture": "unrelated-3000",
+      "engine": "legacy",
+      "before": {
+        "units": 39000,
+        "utf8Bytes": 39000,
+        "documentNodes": 6004,
+        "lexicalTokens": 24000
+      },
+      "after": {
+        "units": 72000,
+        "utf8Bytes": 72000,
+        "documentNodes": 6004,
+        "lexicalTokens": 24000
+      },
+      "runs": [
+        {
+          "elapsedMs": 22.453708,
+          "maxRssKiB": 83472,
+          "outcome": "rendered"
+        }
+      ],
+      "artifact": "unrelated-3000-legacy.json"
+    },
+    {
+      "fixture": "unrelated-3000",
+      "engine": "jsdiff",
+      "before": {
+        "units": 39000,
+        "utf8Bytes": 39000,
+        "documentNodes": 6004,
+        "lexicalTokens": 24000
+      },
+      "after": {
+        "units": 72000,
+        "utf8Bytes": 72000,
+        "documentNodes": 6004,
+        "lexicalTokens": 24000
+      },
+      "runs": [
+        {
+          "elapsedMs": 3.7108750000000015,
+          "maxRssKiB": 70464,
+          "outcome": "local-limit"
+        }
+      ],
+      "artifact": "unrelated-3000-jsdiff.json"
+    }
+  ]
+}
